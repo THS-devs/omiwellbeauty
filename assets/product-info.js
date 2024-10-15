@@ -287,11 +287,7 @@ if (!customElements.get('product-info')) {
           `${this.dataset.section}-${variantFeaturedMediaId}`,
           true
         );
-
-        // update media modal
-        const modalContent = this.productModal?.querySelector(`.product-media-modal__content`);
-        const newModalContent = html.querySelector(`product-modal .product-media-modal__content`);
-        if (modalContent && newModalContent) modalContent.innerHTML = newModalContent.innerHTML;
+  
       }
 
       setQuantityBoundries() {
