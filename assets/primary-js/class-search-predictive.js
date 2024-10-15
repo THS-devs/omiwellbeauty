@@ -1,6 +1,8 @@
 /**
  * Buit in shopify class for search form
  */
+import SearchForm from './class-search-form.js';
+
 class PredictiveSearch extends SearchForm {
   constructor() {
     super();

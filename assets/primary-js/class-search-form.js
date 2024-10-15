@@ -1,7 +1,7 @@
 /**
  * Buit in shopify class for search form
  */
-class SearchForm extends HTMLElement {
+export default class SearchForm extends HTMLElement {
   constructor() {
     super();
     this.input = this.querySelector('input[type="search"]');
