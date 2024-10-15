@@ -33,7 +33,7 @@
 
     {{ content_for_header }}
 
-    {% render 'root-vars' %}
+    {% comment %} {% render 'root-vars' %} {% endcomment %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
