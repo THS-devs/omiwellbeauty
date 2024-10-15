@@ -225,19 +225,6 @@ class QuantityInput extends HTMLElement {
     );
   }
 
-  quantityUpdateUnsubscriber = undefined;
-
-  connectedCallback() {
-    this.validateQtyRules();
-    this.quantityUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.quantityUpdate, this.validateQtyRules.bind(this));
-  }
-
-  disconnectedCallback() {
-    if (this.quantityUpdateUnsubscriber) {
-      this.quantityUpdateUnsubscriber();
-    }
-  }
-
   onInputChange(event) {
     this.validateQtyRules();
   }
@@ -528,28 +515,6 @@ class MenuDrawer extends HTMLElement {
     this.closeAnimation(detailsElement);
   }
 
-  closeAnimation(detailsElement) {
-    let animationStart;
-
-    const handleAnimation = (time) => {
-      if (animationStart === undefined) {
-        animationStart = time;
-      }
-
-      const elapsedTime = time - animationStart;
-
-      if (elapsedTime < 400) {
-        window.requestAnimationFrame(handleAnimation);
-      } else {
-        detailsElement.removeAttribute('open');
-        if (detailsElement.closest('details[open]')) {
-          trapFocus(detailsElement.closest('details[open]'), detailsElement.querySelector('summary'));
-        }
-      }
-    };
-
-    window.requestAnimationFrame(handleAnimation);
-  }
 }
 
 customElements.define('menu-drawer', MenuDrawer);
