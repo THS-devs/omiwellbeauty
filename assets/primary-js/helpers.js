@@ -3,7 +3,7 @@
  */
 
 
-function debounce(fn, wait) {
+export function debounce(fn, wait) {
   let t;
   return (...args) => {
     clearTimeout(t);
@@ -11,7 +11,7 @@ function debounce(fn, wait) {
   };
 }
 
-function throttle(fn, delay) {
+export function throttle(fn, delay) {
   let lastCall = 0;
   return function (...args) {
     const now = new Date().getTime();
