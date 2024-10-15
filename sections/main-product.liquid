@@ -182,7 +182,6 @@
                   <details id="Details-{{ block.id }}-{{ section.id }}">
                     <summary>
                       <div class="summary__title">
-                        {% render 'icon-accordion', icon: block.settings.icon %}
                         <h2 class="h4 accordion__title inline-richtext">
                           {{ block.settings.heading | default: block.settings.page.title | escape }}
                         </h2>
@@ -664,15 +663,13 @@
     {%- endfor -%}
 
     {%- if product.media.size > 0 -%}
-      <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
-      <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
+
     {%- endif -%}
 
     {%- if first_3d_model -%}
       <script type="application/json" id="ProductJSON-{{ product.id }}">
         {{ product.media | where: 'media_type', 'model' | json }}
       </script>
-      <script src="{{ 'product-model.js' | asset_url }}" defer></script>
     {%- endif -%}
 
     {%- liquid
