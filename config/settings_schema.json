@@ -4,6 +4,8 @@
     "theme_name": "OMI Wellbeauty",
     "theme_version": "1.0.0",
     "theme_author": "Two Hours Sleep",
+    "theme_documentation_url": "https://omiwellbeauty.com",
+    "theme_support_url": "https://omiwellbeauty.com"
   },
   {
     "name": "t:settings_schema.logo.name",
