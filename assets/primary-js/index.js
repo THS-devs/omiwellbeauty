@@ -1,9 +1,8 @@
 /**
  * Import modules
  */
-console.log('primary');
 import './class-search-form.js';
-import './class-search-main.js';
+//import './class-search-main.js';
 import './class-search-predictive.js';
 
 const ID = document.getElementById('test');
