@@ -1,6 +1,7 @@
 /**
  * Import modules
  */
+console.log('primary');
 import './class-search-form.js';
 import './class-search-main.js';
 import './class-search-predictive.js';
@@ -11,5 +12,3 @@ ID.addEventListener('click', function() {
   const test = this;
 
 });
-
-console.log('primary');
