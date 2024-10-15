@@ -1,6 +1,8 @@
 /**
  * Buit in shopify class for search form
- */
+*/
+import { debounce } from './helpers.js';  // Import the debounce function
+
 export default class SearchForm extends HTMLElement {
   constructor() {
     super();
