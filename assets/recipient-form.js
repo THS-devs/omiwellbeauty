@@ -28,41 +28,7 @@ if (!customElements.get('recipient-form')) {
       cartUpdateUnsubscriber = undefined;
       variantChangeUnsubscriber = undefined;
       cartErrorUnsubscriber = undefined;
-
-      connectedCallback() {
-        this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
-          if (event.source === 'product-form' && event.productVariantId.toString() === this.currentProductVariantId) {
-            this.resetRecipientForm();
-          }
-        });
-
-        this.variantChangeUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
-          if (event.data.sectionId === this.dataset.sectionId) {
-            this.currentProductVariantId = event.data.variant.id.toString();
-          }
-        });
-
-        this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartError, (event) => {
-          if (event.source === 'product-form' && event.productVariantId.toString() === this.currentProductVariantId) {
-            this.displayErrorMessage(event.message, event.errors);
-          }
-        });
-      }
-
-      disconnectedCallback() {
-        if (this.cartUpdateUnsubscriber) {
-          this.cartUpdateUnsubscriber();
-        }
-
-        if (this.variantChangeUnsubscriber) {
-          this.variantChangeUnsubscriber();
-        }
-
-        if (this.cartErrorUnsubscriber) {
-          this.cartErrorUnsubscriber();
-        }
-      }
-
+      
       onChange() {
         if (this.checkboxInput.checked) {
           this.enableInputFields();

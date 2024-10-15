@@ -20,11 +20,6 @@ if (!customElements.get('product-info')) {
       connectedCallback() {
         this.initializeProductSwapUtility();
 
-        this.onVariantChangeUnsubscriber = subscribe(
-          PUB_SUB_EVENTS.optionValueSelectionChange,
-          this.handleOptionValueChange.bind(this)
-        );
-
         this.initQuantityHandlers();
         this.dispatchEvent(new CustomEvent('product-info:loaded', { bubbles: true }));
       }
@@ -40,9 +35,6 @@ if (!customElements.get('product-info')) {
         if (!this.quantityForm) return;
 
         this.setQuantityBoundries();
-        if (!this.dataset.originalSection) {
-          this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, this.fetchQuantityRules.bind(this));
-        }
       }
 
       disconnectedCallback() {
@@ -200,14 +192,6 @@ if (!customElements.get('product-info')) {
             html.getElementById(`ProductSubmitButton-${this.sectionId}`)?.hasAttribute('disabled') ?? true,
             window.variantStrings.soldOut
           );
-
-          publish(PUB_SUB_EVENTS.variantChange, {
-            data: {
-              sectionId: this.sectionId,
-              html,
-              variant,
-            },
-          });
         };
       }
 
@@ -331,8 +315,6 @@ if (!customElements.get('product-info')) {
           this.quantityInput.removeAttribute('max');
         }
         this.quantityInput.value = min;
-
-        publish(PUB_SUB_EVENTS.quantityUpdate, undefined);
       }
 
       fetchQuantityRules() {
