@@ -21,18 +21,6 @@ if (!customElements.get('product-info')) {
         this.quantityInput = this.querySelector('.quantity__input');
       }
 
-      connectedCallback() {
-        this.initializeProductSwapUtility();
-
-        this.onVariantChangeUnsubscriber = subscribe(
-          PUB_SUB_EVENTS.optionValueSelectionChange,
-          this.handleOptionValueChange.bind(this)
-        );
-
-        this.initQuantityHandlers();
-        this.dispatchEvent(new CustomEvent('product-info:loaded', { bubbles: true }));
-      }
-
       addPreProcessCallback(callback) {
         this.preProcessHtmlCallbacks.push(callback);
       }
@@ -47,11 +35,6 @@ if (!customElements.get('product-info')) {
         if (!this.dataset.originalSection) {
           this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, this.fetchQuantityRules.bind(this));
         }
-      }
-
-      disconnectedCallback() {
-        this.onVariantChangeUnsubscriber();
-        this.cartUpdateUnsubscriber?.();
       }
 
       initializeProductSwapUtility() {
