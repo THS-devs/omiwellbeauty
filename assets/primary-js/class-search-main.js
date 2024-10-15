@@ -1,5 +1,5 @@
 /**
- * Buit in shopify clas for search form
+ * Buit in shopify class for search form
  */
 class SearchForm extends HTMLElement {
   constructor() {

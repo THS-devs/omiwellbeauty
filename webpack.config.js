@@ -3,35 +3,33 @@ const path = require('path');
 module.exports = (env, argv) => {
   const fileType = env.file;;
 
-  let config = {};
+  let entryPath = '' 
+  let fileName = '';
 
   switch(fileType) {
     case 'primary':
-      config = {
-        entry: './assets/primary-js/index.js',
-        output: {
-          filename: 'primary.js',
-          path: path.resolve(__dirname, 'assets'),
-        },
-        mode: 'production', 
-        watch: true,
-      };
+      entryPath = './assets/primary-js/index.js';
+      fileName = 'primary.js';
       break;
     case 'cart':
-      config = {
-        entry: './assets/cart-js/index.js',
-        output: {
-          filename: 'cart.js',
-          path: path.resolve(__dirname, 'assets'),
-        },
-        mode: 'production', 
-        watch: true,
-      };
+      entryPath = './assets/cart-js/index.js';
+      fileName = 'cart.js';   
+      break;
+    case 'product':
+      entryPath = './assets/product-js/index.js';
+      fileName = 'product.js';   
       break;
     default:
       throw new Error('No matching configuration found.');
-
   }
 
-  return config;
+  return {
+    entry: entryPath,
+    output: {
+      filename: fileName,
+      path: path.resolve(__dirname, 'assets'),
+    },
+    mode: 'production', 
+    watch: true,
+  };
 };
