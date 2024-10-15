@@ -1,7 +1,7 @@
 /**
  * Import modules
  */
-import './search.js';
+import './class-search.js';
 
 const ID = document.getElementById('test');
 
