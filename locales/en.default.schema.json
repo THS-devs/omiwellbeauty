@@ -328,9 +328,6 @@
     "layout": {
       "name": "Layout",
       "settings": {
-        "page_width": {
-          "label": "Page width"
-        },
         "spacing_sections": {
           "label": "Space between template sections"
         },
