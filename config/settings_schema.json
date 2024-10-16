@@ -60,6 +60,12 @@
         "label": "Secondary Color",
         "default": "#2ecc71"
       },
+      {
+        "type": "color",
+        "id": "secondary_color_dark",
+        "label": "Secondary Color Dark",
+        "default": "#D58774"
+      },
     ]
   },
   {
