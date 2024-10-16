@@ -34,6 +34,30 @@
     ]
   },
   {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "primary_color",
+        "label": "Primary Color",
+        "default": "#3498db"
+      },
+      {
+        "type": "color",
+        "id": "secondary_color",
+        "label": "Secondary Color",
+        "default": "#2ecc71"
+      },
+      {
+        "type": "font",
+        "id": "font_stack",
+        "label": "Font Stack",
+        "default": "Helvetica Neue, Helvetica, Arial, sans-serif"
+      }
+      // Add more settings as needed
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {
