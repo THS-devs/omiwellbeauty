@@ -9,7 +9,18 @@
  */
 {
   "sections": {
+    "contact_form_FcJf9h": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
   },
   "order": [
+    "contact_form_FcJf9h"
   ]
 }
