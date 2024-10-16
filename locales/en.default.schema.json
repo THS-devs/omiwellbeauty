@@ -94,9 +94,6 @@
           "label": "Font",
           "info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
         },
-        "heading_scale": {
-          "label": "Font size scale"
-        },
         "header__1": {
           "content": "Headings"
         },
@@ -212,9 +209,6 @@
         },
         "header__2": {
           "content": "Announcements"
-        },
-        "show_social": {
-          "label": "Show icons on desktop"
         },
         "header__3": {
           "content": "Country/region selector",
@@ -728,23 +722,9 @@
         }
       },
       "settings": {
-        "newsletter_enable": {
-          "label": "Show email signup"
-        },
-        "newsletter_heading": {
-          "label": "Heading",
-          "default": "Subscribe to our emails"
-        },
-        "header__1": {
-          "content": "Email Signup",
-          "info": "Subscribers added automatically to your “accepted marketing” customer list. [Learn more](https://help.shopify.com/manual/customers/manage-customers)"
-        },
         "header__2": {
           "content": "Social media icons",
           "info": "To display your social media accounts, link them in your [theme settings](/editor?context=theme&category=social%20media)."
-        },
-        "show_social": {
-          "label": "Show social media icons"
         },
         "header__3": {
           "content": "Country/region selector"
@@ -757,9 +737,6 @@
         },
         "header__5": {
           "content": "Language selector"
-        },
-        "header__6": {
-          "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
         },
         "enable_language_selector": {
           "label": "Enable language selector"
@@ -783,9 +760,6 @@
         "header__9": {
           "content": "Follow on Shop",
           "info": "To allow customers to follow your store on the Shop app from your storefront, Shop Pay must be enabled. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
-        },
-        "enable_follow_on_shop": {
-          "label": "Enable Follow on Shop"
         }
       }
     },
@@ -858,9 +832,6 @@
         },
         "header__5": {
           "content": "Language selector"
-        },
-        "header__6": {
-          "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
         },
         "enable_language_selector": {
           "label": "Enable language selector"
