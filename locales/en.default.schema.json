@@ -212,36 +212,6 @@
         }
       }
     },
-    "cart": {
-      "name": "Cart",
-      "settings": {
-        "cart_type": {
-          "label": "Cart type",
-          "drawer": {
-            "label": "Drawer"
-          },
-          "page": {
-            "label": "Page"
-          },
-          "notification": {
-            "label": "Popup notification"
-          }
-        },
-        "show_vendor": {
-          "label": "Show vendor"
-        },
-        "show_cart_note": {
-          "label": "Enable cart note"
-        },
-        "cart_drawer": {
-          "header": "Cart drawer",
-          "collection": {
-            "label": "Collection",
-            "info": "Visible when cart drawer is empty."
-          }
-        }
-      }
-    },
   },
   "sections": {
     "all": {
@@ -653,9 +623,6 @@
         },
         "show_secondary_image": {
           "label": "Show second image on hover"
-        },
-        "show_vendor": {
-          "label": "Show vendor"
         },
         "show_rating": {
           "label": "Show product rating",
@@ -1644,9 +1611,6 @@
         "show_secondary_image": {
           "label": "Show second image on hover"
         },
-        "show_vendor": {
-          "label": "Show vendor"
-        },
         "show_rating": {
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
@@ -2289,9 +2253,6 @@
         "show_secondary_image": {
           "label": "Show second image on hover"
         },
-        "show_vendor": {
-          "label": "Show vendor"
-        },
         "show_rating": {
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#search-results-section-settings)"
@@ -2659,9 +2620,6 @@
         },
         "show_secondary_image": {
           "label": "Show second image on hover"
-        },
-        "show_vendor": {
-          "label": "Show vendor"
         },
         "show_rating": {
           "label": "Show product rating",

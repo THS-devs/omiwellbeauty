@@ -199,7 +199,6 @@
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "show_secondary_image": true,
-        "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
         "padding_top": 36,

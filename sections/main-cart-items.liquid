@@ -1,7 +1,4 @@
-{%- unless settings.cart_type == 'drawer' -%}
-  <script src="{{ 'cart-min.js' | asset_url }}" defer="defer"></script>
-{%- endunless -%}
-
+<script src="{{ 'cart-min.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
@@ -77,10 +74,6 @@
                     </td>
 
                     <td class="cart-item__details">
-                      {%- if settings.show_vendor -%}
-                        <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
-                      {%- endif -%}
-
                       <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
 
                       {%- if item.original_price != item.final_price -%}
