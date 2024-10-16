@@ -54,8 +54,8 @@
       },
       {
         "type": "color",
-        "id": "primary_color_light_darker",
-        "label": "Primary Color Light Darker",
+        "id": "primary_color_light_2",
+        "label": "Primary Color Light 2",
         "default": "#7E7796"
       },
       {
