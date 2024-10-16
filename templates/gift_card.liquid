@@ -69,8 +69,7 @@
   <body class="gradient gift-card">
     <header>
       <div class="gift-card__price">
-        <h1>{{ gift_card.balance | money_with_currency }}</h1>
-        
+        <h1>{{ gift_card.balance | money }}</h1>
         {%- if gift_card.enabled == false or gift_card.expired -%}
           <p class="badge badge--expired">{{ 'gift_cards.issued.expired' | t }}</p>
         {%- endif -%}
