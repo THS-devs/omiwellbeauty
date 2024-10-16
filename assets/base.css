@@ -2114,10 +2114,6 @@ input[type='checkbox'] {
   }
 }
 
-.utility-bar .list-social__item .icon {
-  scale: 0.9;
-}
-
 @media screen and (min-width: 990px) {
   .utility-bar__grid--3-col {
     grid-template-columns: 3fr 4fr 3fr;
@@ -2174,13 +2170,6 @@ input[type='checkbox'] {
 .announcement-bar .slider-button--prev {
   margin-left: -1.5rem;
   min-width: 44px;
-}
-
-.announcement-bar .slider-button--next:focus-visible,
-.announcement-bar .slider-button--prev:focus-visible,
-.utility-bar .list-social__link:focus-visible {
-  outline-offset: -0.3rem;
-  box-shadow: 0 0 0 -0.2rem rgb(var(--color-foreground));
 }
 
 .localization-wrapper {
