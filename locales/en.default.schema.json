@@ -142,24 +142,6 @@
   "sections": {
     "all": {
       "spacing": "Spacing",
-      "heading_size": {
-        "label": "Heading size",
-        "options__1": {
-          "label": "Small"
-        },
-        "options__2": {
-          "label": "Medium"
-        },
-        "options__3": {
-          "label": "Large"
-        },
-        "options__4": {
-          "label": "Extra large"
-        },
-        "options__5": {
-          "label": "Extra extra large"
-        }
-      },
       "image_shape": {
         "options__1": {
           "label": "Default"
@@ -344,18 +326,6 @@
       },
       "presets": {
         "name": "Collection list"
-      }
-    },
-    "contact-form": {
-      "name": "Contact Form",
-      "presets": {
-        "name": "Contact form"
-      },
-      "settings": {
-        "title": {
-          "default": "Contact form",
-          "label": "Heading"
-        }
       }
     },
     "featured-blog": {
