@@ -34,18 +34,18 @@
     ]
   },
   {
-    "name": "t:settings_schema.colors.name",
+    "name": "Colors",
     "settings": [
       {
         "type": "color",
         "id": "primary_color",
-        "label": "t:settings_schema.colors.settings.primary_color.label",
+        "label": "Primary Color",
         "default": "#3498db"
       },
       {
         "type": "color",
         "id": "secondary_color",
-        "label": "t:settings_schema.colors.settings.secondary_color.label",
+        "label": "Secondary Color",
         "default": "#2ecc71"
       },
     ]
