@@ -71,33 +71,6 @@
         }
       }
     },
-    "colors": {
-      "name": "Colors",
-      "settings": {
-        "background": {
-          "label": "Background"
-        },
-        "background_gradient": {
-          "label": "Background gradient",
-          "info": "Background gradient replaces background where possible."
-        },
-        "text": {
-          "label": "Text"
-        },
-        "button_background": {
-          "label": "Solid button background"
-        },
-        "button_label": {
-          "label": "Solid button label"
-        },
-        "secondary_button_label": {
-          "label": "Outline button"
-        },
-        "shadow": {
-          "label": "Shadow"
-        }
-      }
-    },
     "logo": {
       "name": "Logo",
       "settings": {
@@ -221,10 +194,6 @@
         "padding_bottom": "Bottom padding"
       },
       "spacing": "Spacing",
-      "colors": {
-        "label": "Color scheme",
-        "has_cards_info": "To change the card color scheme, update your theme settings."
-      },
       "heading_size": {
         "label": "Heading size",
         "options__1": {
@@ -922,9 +891,6 @@
         "header__1": {
           "content": "Color"
         },
-        "menu_color_scheme": {
-          "label": "Menu color scheme"
-        },
         "sticky_header_type": {
           "label": "Sticky header",
           "options__1": {
@@ -1375,9 +1341,6 @@
           },
           "label": "Desktop image placement",
           "info": "Placement is automatically optimized for mobile."
-        },
-        "container_color_scheme": {
-          "label": "Container color scheme"
         },
         "mobile_content_alignment": {
           "options__1": {
@@ -2475,9 +2438,6 @@
           },
           "label": "Desktop content position"
         },
-        "color_scheme": {
-          "info": "Visible when container displayed."
-        },
         "image_height": {
           "label": "Banner height",
           "options__1": {
@@ -2958,10 +2918,6 @@
           "options__3": {
             "label": "Section container"
           }
-        },
-        "container_color_scheme": {
-          "label": "Container color scheme",
-          "info": "Visible when Layout is set to Row or Section container."
         },
         "open_first_collapsible_row": {
           "label": "Open first collapsible row"
