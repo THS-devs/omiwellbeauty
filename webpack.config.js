@@ -8,15 +8,15 @@ module.exports = (env, argv) => {
 
   switch(fileType) {
     case 'primary':
-      entryPath = './assets/primary-js/index.js';
+      entryPath = './assets/primary/js/index.js';
       fileName = 'primary-min.js';
       break;
     case 'cart':
-      entryPath = './assets/cart-js/index.js';
+      entryPath = './assets/cart/js/index.js';
       fileName = 'cart-min.js';   
       break;
     case 'product':
-      entryPath = './assets/product-js/index.js';
+      entryPath = './assets/product/js/index.js';
       fileName = 'product-min.js';   
       break;
     default:

@@ -15,15 +15,15 @@ module.exports = (env, argv) => {
 
   switch (fileType) {
     case 'primary':
-      entryPath = './assets/primary-scss/index.scss';
+      entryPath = './assets/primary/scss/index.scss';
       fileName = 'primary-min.css';
       break;
     case 'cart':
-      entryPath = './assets/cart-scss/index.scss';
+      entryPath = './assets/cart/scss/index.scss';
       fileName = 'cart-min.css';
       break;
     case 'product':
-      entryPath = './assets/product-scss/index.scss';
+      entryPath = './assets/product/scss/index.scss';
       fileName = 'product-min.css';
       break;
     default:
