@@ -74,6 +74,18 @@
         "type": "header",
         "content": "Background Colors"
       },
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background",
+        "default": "#FFFAF2"
+      },
+      {
+        "type": "color",
+        "id": "background_dark",
+        "label": "Background Dark",
+        "default": "#F2EAE1"
+      },
     ]
   },
   {
