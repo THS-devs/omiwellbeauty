@@ -192,9 +192,6 @@
       "name": "Variant pills",
       "paragraph": "Variant pills are one way of displaying your product variants. [Learn more](https://help.shopify.com/en/manual/online-store/themes/theme-structure/page-types#variant-picker-block)"
     },
-    "content_containers": {
-      "name": "Content containers"
-    },
     "popups": {
       "name": "Dropdowns and pop-ups",
       "paragraph": "Affects areas like navigation dropdowns, pop-up modals, and cart pop-ups."
