@@ -43,20 +43,6 @@
         }
       }
     },
-    "cards": {
-      "name": "Product cards",
-      "settings": {
-        "style": {
-          "options__1": {
-            "label": "Standard"
-          },
-          "options__2": {
-            "label": "Card"
-          },
-          "label": "Style"
-        }
-      }
-    },
     "collection_cards": {
       "name": "Collection cards",
       "settings": {
