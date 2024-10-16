@@ -39,16 +39,15 @@
       {
         "type": "color",
         "id": "primary_color",
-        "label": "Primary Color",
+        "label": "t:settings_schema.colors.settings.primary_color.label",
         "default": "#3498db"
       },
       {
         "type": "color",
         "id": "secondary_color",
-        "label": "Secondary Color",
+        "label": "t:settings_schema.colors.settings.secondary_color.label",
         "default": "#2ecc71"
-      }
-      // Add more settings as needed
+      },
     ]
   },
   {
