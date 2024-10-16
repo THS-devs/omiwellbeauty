@@ -34,7 +34,7 @@
     ]
   },
   {
-    "name": "Colors",
+    "name": "t:settings_schema.colors.name",
     "settings": [
       {
         "type": "color",
@@ -47,12 +47,6 @@
         "id": "secondary_color",
         "label": "Secondary Color",
         "default": "#2ecc71"
-      },
-      {
-        "type": "font",
-        "id": "font_stack",
-        "label": "Font Stack",
-        "default": "Helvetica Neue, Helvetica, Arial, sans-serif"
       }
       // Add more settings as needed
     ]
