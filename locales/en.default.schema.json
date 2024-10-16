@@ -71,32 +71,6 @@
         }
       }
     },
-    "badges": {
-      "name": "Badges",
-      "settings": {
-        "position": {
-          "options__1": {
-            "label": "Bottom left"
-          },
-          "options__2": {
-            "label": "Bottom right"
-          },
-          "options__3": {
-            "label": "Top left"
-          },
-          "options__4": {
-            "label": "Top right"
-          },
-          "label": "Position on cards"
-        },
-        "sale_badge_color_scheme": {
-          "label": "Sale badge color scheme"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Sold out badge color scheme"
-        }
-      }
-    },
     "colors": {
       "name": "Colors",
       "settings": {
@@ -140,26 +114,6 @@
         }
       }
     },
-    "brand_information": {
-      "name": "Brand information",
-      "settings": {
-        "paragraph": {
-          "content": "Add a brand description to your store's footer."
-        },
-        "brand_headline": {
-          "label": "Headline"
-        },
-        "brand_description": {
-          "label": "Description"
-        },
-        "brand_image": {
-          "label": "Image"
-        },
-        "brand_image_width": {
-          "label": "Image width"
-        }
-      }
-    },
     "typography": {
       "name": "Typography",
       "settings": {
@@ -191,10 +145,6 @@
     "variant_pills": {
       "name": "Variant pills",
       "paragraph": "Variant pills are one way of displaying your product variants. [Learn more](https://help.shopify.com/en/manual/online-store/themes/theme-structure/page-types#variant-picker-block)"
-    },
-    "popups": {
-      "name": "Dropdowns and pop-ups",
-      "paragraph": "Affects areas like navigation dropdowns, pop-up modals, and cart pop-ups."
     },
     "media": {
       "name": "Media"
@@ -893,21 +843,6 @@
             "menu": {
               "label": "Menu",
               "info": "Displays only top-level menu items."
-            }
-          }
-        },
-        "brand_information": {
-          "name": "Brand information",
-          "settings": {
-            "paragraph": {
-              "content": "This block will display your brand information. [Edit brand information.](/editor?context=theme&category=brand%20information)"
-            },
-            "header__1": {
-              "content": "Social media icons"
-            },
-            "show_social": {
-              "label": "Show social media icons",
-              "info": "To display your social media accounts, link them in your [theme settings](/editor?context=theme&category=social%20media)."
             }
           }
         },
