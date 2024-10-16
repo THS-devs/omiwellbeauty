@@ -44,6 +44,18 @@
       },
       {
         "type": "color",
+        "id": "primary_color_light",
+        "label": "Primary Color Light",
+        "default": "#9A92B6"
+      },
+      {
+        "type": "color",
+        "id": "primary_color_light_darker",
+        "label": "Primary Color Light Darker",
+        "default": "#7E7796"
+      },
+      {
+        "type": "color",
         "id": "secondary_color",
         "label": "Secondary Color",
         "default": "#2ecc71"
