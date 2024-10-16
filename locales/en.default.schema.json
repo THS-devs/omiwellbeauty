@@ -1250,33 +1250,6 @@
             }
           }
         },
-        "buttons": {
-          "name": "Buttons",
-          "settings": {
-            "button_label_1": {
-              "label": "First button label",
-              "info": "Leave the label blank to hide the button.",
-              "default": "Button label"
-            },
-            "button_link_1": {
-              "label": "First button link"
-            },
-            "button_style_secondary_1": {
-              "label": "Use outline button style"
-            },
-            "button_label_2": {
-              "label": "Second button label",
-              "info": "Leave the label blank to hide the button.",
-              "default": "Button label"
-            },
-            "button_link_2": {
-              "label": "Second button link"
-            },
-            "button_style_secondary_2": {
-              "label": "Use outline button style"
-            }
-          }
-        }
       },
       "presets": {
         "name": "Image banner"
@@ -2897,32 +2870,6 @@
             }
           }
         },
-        "buttons": {
-          "name": "Buttons",
-          "settings": {
-            "button_label_1": {
-              "label": "First button label",
-              "info": "Leave the label blank to hide the button.",
-              "default": "Button label"
-            },
-            "button_link_1": {
-              "label": "First button link"
-            },
-            "button_style_secondary_1": {
-              "label": "Use outline button style"
-            },
-            "button_label_2": {
-              "label": "Second button label",
-              "info": "Leave the label blank to hide the button."
-            },
-            "button_link_2": {
-              "label": "Second button link"
-            },
-            "button_style_secondary_2": {
-              "label": "Use outline button style"
-            }
-          }
-        }
       },
       "presets": {
         "name": "Rich text"
