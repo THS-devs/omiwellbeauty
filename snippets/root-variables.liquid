@@ -5,25 +5,25 @@
 %}
 
 {% style %}
-  {{ settings.type_body_font | font_face: font_display: 'swap' }}
-  {{ body_font_bold | font_face: font_display: 'swap' }}
-  {{ body_font_italic | font_face: font_display: 'swap' }}
-  {{ body_font_bold_italic | font_face: font_display: 'swap' }}
-  {{ settings.type_header_font | font_face: font_display: 'swap' }}
-
-  {{ scheme_classes | prepend: 'body' }} {
-    color: rgba(var(--color-foreground), 0.75);
-    background-color: rgb(var(--color-background));
-  }
 
   :root {
-    --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
-    --font-body-style: {{ settings.type_body_font.style }};
-    --font-body-weight: {{ settings.type_body_font.weight }};
-    --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
+    --font-body-family: "Manrope", sans-serif;;
+    --font-body-style: normal;
+    --font-body-weight: 400;
+    --font-body-weight-bold: 700;
 
-    --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
-    --font-heading-style: {{ settings.type_header_font.style }};
-    --font-heading-weight: {{ settings.type_header_font.weight }};
+    --font-heading-family: "Cormorant Infant", serif;
+    --font-heading-style: normal;
+    --font-heading-weight: 400;
+
+    --primary-color: {{ settings.primary_color }};
+    --primary-color-light: {{ settings.primary_color_light }};
+    --primary-color-light2: {{ settings.primary_color_light_2 }};
+
+    --secondary-color: {{ settings.secondary_color }};
+    --secondary-color-dark: {{ settings.secondary_color_dark }};
+
+    --background: {{ settings.background }};
+    --background-dark: {{ settings.background_dark }};
   }
 {% endstyle %}

@@ -34,22 +34,45 @@
     ]
   },
   {
-    "name": "t:settings_schema.typography.name",
+    "name": "Colors",
     "settings": [
       {
         "type": "header",
-        "content": "t:settings_schema.typography.settings.header__1.content"
+        "content": "Brand Colors"
       },
       {
-        "type": "font_picker",
-        "id": "type_header_font",
-        "default": "assistant_n4",
-        "label": "t:settings_schema.typography.settings.type_header_font.label",
-        "info": "t:settings_schema.typography.settings.type_header_font.info"
+        "type": "color",
+        "id": "primary_color",
+        "label": "Primary Color",
+        "default": "#3498db"
+      },
+      {
+        "type": "color",
+        "id": "primary_color_light",
+        "label": "Primary Color Light",
+        "default": "#9A92B6"
+      },
+      {
+        "type": "color",
+        "id": "primary_color_light_2",
+        "label": "Primary Color Light Dark",
+        "default": "#7E7796"
+      },
+      {
+        "type": "color",
+        "id": "secondary_color",
+        "label": "Secondary Color",
+        "default": "#2ecc71"
+      },
+      {
+        "type": "color",
+        "id": "secondary_color_dark",
+        "label": "Secondary Color Dark",
+        "default": "#D58774"
       },
       {
         "type": "header",
-        "content": "t:settings_schema.typography.settings.header__2.content"
+        "content": "Background Colors"
       },
       {
         "type": "font_picker",
@@ -57,6 +80,18 @@
         "default": "assistant_n4",
         "label": "t:settings_schema.typography.settings.type_body_font.label",
         "info": "t:settings_schema.typography.settings.type_body_font.info"
+      },
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background",
+        "default": "#FFFAF2"
+      },
+      {
+        "type": "color",
+        "id": "background_dark",
+        "label": "Background Dark",
+        "default": "#F2EAE1"
       }
     ]
   },
