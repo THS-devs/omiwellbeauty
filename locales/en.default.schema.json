@@ -141,9 +141,6 @@
   },
   "sections": {
     "all": {
-      "padding": {
-        "section_padding_heading": "Section padding",
-      },
       "spacing": "Spacing",
       "heading_size": {
         "label": "Heading size",
