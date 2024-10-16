@@ -37,6 +37,10 @@
     "name": "Colors",
     "settings": [
       {
+        "type": "header",
+        "content": "Brand Colors"
+      },
+      {
         "type": "color",
         "id": "primary_color",
         "label": "Primary Color",
@@ -65,6 +69,10 @@
         "id": "secondary_color_dark",
         "label": "Secondary Color Dark",
         "default": "#D58774"
+      },
+      {
+        "type": "header",
+        "content": "Background Colors"
       },
     ]
   },
