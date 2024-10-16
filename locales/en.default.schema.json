@@ -143,7 +143,6 @@
     "all": {
       "padding": {
         "section_padding_heading": "Section padding",
-        "padding_top": "Top padding",
         "padding_bottom": "Bottom padding"
       },
       "spacing": "Spacing",
@@ -213,9 +212,6 @@
         "header__3": {
           "content": "Country/region selector",
           "info": "To add a country/region, go to your [market settings.](/admin/settings/markets)"
-        },
-        "enable_country_selector": {
-          "label": "Enable country/region selector"
         },
         "header__4": {
           "content": "Language selector",
@@ -732,9 +728,6 @@
         "header__4": {
           "info": "To add a country/region, go to your [market settings.](/admin/settings/markets)"
         },
-        "enable_country_selector": {
-          "label": "Enable country/region selector"
-        },
         "header__5": {
           "content": "Language selector"
         },
@@ -744,18 +737,12 @@
         "header__7": {
           "content": "Payment methods"
         },
-        "payment_enable": {
-          "label": "Show payment icons"
-        },
         "header__8": {
           "content": "Policy links",
           "info": "To add store policies, go to your [policy settings](/admin/settings/legal)."
         },
         "show_policy": {
           "label": "Show policy links"
-        },
-        "margin_top": {
-          "label": "Top margin"
         },
         "header__9": {
           "content": "Follow on Shop",
@@ -826,9 +813,6 @@
         },
         "header__4": {
           "info": "To add a country/region, go to your [market settings.](/admin/settings/markets)"
-        },
-        "enable_country_selector": {
-          "label": "Enable country/region selector"
         },
         "header__5": {
           "content": "Language selector"
