@@ -120,3 +120,31 @@
     }
   }
 }
+
+$light_sections: '[section_color="White"]', '[section_color="Grey"]', '[section_color="Floral White"]', '[section_color="Paper Lamb"]';
+$dark_sections: '[section_color="Black"]', 'div[section_color="Primary color"]', '[section_color="Primary color 2"]';
+
+// Section colors ------------------------
+@each $light_section in $light_sections {
+  #{$light_section} {
+    @include txt_dark;
+
+    @each $dark_section in $dark_sections {
+      #{$dark_section} {
+        @include txt_light;
+      }
+    }
+  }
+}
+
+@each $dark_section in $dark_sections {
+  #{$dark_section} {
+    @include txt_light;
+
+    @each $light_section in $light_sections {
+      #{$light_section} {
+        @include txt_dark;
+      }
+    }
+  }
+}

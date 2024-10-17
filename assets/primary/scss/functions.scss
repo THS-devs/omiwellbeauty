@@ -1,0 +1,144 @@
+@mixin txt_light {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  p,
+  span,
+  blockquote,
+  label:not(.checkbox):not(.radio),
+  div.wpforms-container form .wpforms-field-container .wpforms-field-label,
+  div {
+    color: #ffffff;
+  }
+
+  a:not([class]) {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .txt-primary {
+    color: #fff;
+  }
+
+  .txt-body {
+    color: #ffffff;
+  }
+
+  .txt-header {
+    color: #ffffff;
+  }
+}
+
+@mixin txt_dark {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--primary-color);
+  }
+
+  li,
+  p,
+  span,
+  blockquote {
+    color: var(--primary-color);
+  }
+
+  a:not([class]) {
+    color: var(--primary-color);
+
+    &:hover {
+      color: var(--primary-color-light);
+    }
+  }
+
+  .txt-primary {
+    color: var(--primary-color);
+  }
+
+  .txt-body {
+    color: var(--primary-color);
+  }
+
+  .txt-header {
+    color: var(--primary-color);
+  }
+}
+
+@mixin text_container {
+  max-width: 680px;
+  margin: 0 auto;
+
+  &.sm {
+    max-width: 480px;
+  }
+
+  &.md {
+    max-width: 580px;
+  }
+
+  &.lg {
+    max-width: 920px;
+  }
+
+  &.full_width {
+    max-width: 100%;
+  }
+}
+
+@mixin text_area_margin($margin: 20px) {
+  >* {
+    margin-top: $margin;
+    margin-bottom: $margin;
+  }
+
+  >.mb-0 {
+    +* {
+      margin-top: 0;
+    }
+  }
+
+  >p {
+    >.btn {
+      margin-top: math.div($margin, 2);
+      margin-bottom: math.div($margin, 2);
+    }
+
+    >.btn:first-child {
+      margin-top: 0;
+    }
+
+    >.btn:last-child {
+      margin-bottom: 0;
+    }
+
+    >.btn:only-child {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  >*:first-child {
+    margin-top: 0;
+  }
+
+  >*:last-child {
+    margin-bottom: 0;
+  }
+
+  >*:only-child {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
