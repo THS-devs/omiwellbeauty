@@ -4,8 +4,7 @@
       <div class="slider-wpr">
         <div class="slick-slider">
           {%- for block in section.blocks -%}
-            {{ block.type }}
-            {%- if block.type == 'Slides' -%}
+            {%- if block.type == 'slides' -%}
               {% assign text = block.settings.slide %}
 
               {% if text != blank %}
