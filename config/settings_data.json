@@ -48,6 +48,24 @@
       },
       "announcement-bar": {
         "type": "announcement-bar",
+        "blocks": {
+          "slides_xnpEhh": {
+            "type": "slides",
+            "settings": {
+              "slide": "Announcement Slide"
+            }
+          },
+          "slides_jbaG8k": {
+            "type": "slides",
+            "settings": {
+              "slide": "Announcement Slide 2"
+            }
+          }
+        },
+        "block_order": [
+          "slides_xnpEhh",
+          "slides_jbaG8k"
+        ],
         "settings": {
           "hide-announcement-bar": false,
           "section-color": "Secondary"
