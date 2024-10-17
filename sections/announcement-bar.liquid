@@ -1,6 +1,7 @@
 {% if section.settings.hide-announcement-bar == false %}
-  <div class="announcement-bar">
+  <div class="announcement-bar" section_color="{{ section.settings.section_color }}">
     <div class="container-fluid lg">
+
     </div>
   </div>
 {% endif %}
@@ -24,8 +25,16 @@
           "label": "Primary color"
         },
         {
-          "value": "centered",
-          "label": "Centered"
+          "value": "Primary color 2",
+          "label": "Primary color 2"
+        },
+        {
+          "value": "Floral White",
+          "label": "Floral White"
+        },
+        {
+          "value": "Paper Lamb",
+          "label": "Paper Lamb"
         }
       ],
       "default": "left"
