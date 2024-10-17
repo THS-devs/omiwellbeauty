@@ -49,7 +49,7 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "hide-announcement-bar": true
+          "hide-announcement-bar": false
         }
       }
     },
