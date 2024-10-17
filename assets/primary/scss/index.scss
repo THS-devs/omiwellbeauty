@@ -7,11 +7,13 @@ body {
 p, li, a {
   font-family: var(--font-body-family);
   color: var(--primary-color);
+  font-weight: var(--font-body-weight);
 }
 
 h1, h2, h3, h3, h4, h5, h6 {
   font-family: var(--font-heading-family);
   color: var(--primary-color);
+  font-weight: var(--font-heading-weight);
 }
 
 h1.display {
