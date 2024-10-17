@@ -1,8 +1,9 @@
-<div class="announcement-bar">
-  <div class="container-fluid lg">
+{% if section.settings.hide-announcement-bar == false %}
+  <div class="announcement-bar">
+    <div class="container-fluid lg">
+    </div>
   </div>
-</div>
-
+{% endif %}
 {% schema %}
 {
   "name": "Announcement Bar",
@@ -10,8 +11,8 @@
   "settings": [
     {
       "type": "checkbox",
-      "id": "show-announcement-bar",
-      "label": "Show Announcement Bar"
+      "id": "hide-announcement-bar",
+      "label": "Hide Announcement Bar"
     }
   ]
 }
