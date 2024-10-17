@@ -8,6 +8,10 @@
       ul.main {
         margin: 0;
         padding: 0;
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        list-style: none;
       }
     }
   }
