@@ -23,6 +23,10 @@ p, li, a {
     font-size: 12px;
     letter-spacing: 0;
   }
+
+  &.subheading {
+    font-family: var(--font-heading-family);
+  }
 }
 
 h1, h2, h3, h3, h4, h5, h6 {
@@ -102,4 +106,10 @@ h5 {
 
 h6 {
   font-size: 16px;
+}
+
+%btn {
+  padding: 14px 80px;
+  background-color: var(--primary-color);
+  color: #fff;
 }
