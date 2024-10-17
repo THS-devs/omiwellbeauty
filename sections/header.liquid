@@ -1,19 +1,5 @@
-{%- liquid
-  for block in section.blocks
-    if block.type == '@app'
-      assign has_app_block = true
-    endif
-  endfor
--%}
 <div class="header-wrapper">
   <header class="header page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
-
-      {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" rel="nofollow">
-          <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
-        </a>
-      {%- endif -%}
 
       <nav class="header__inline-menu">
         <ul class="main" role="list">
@@ -24,6 +10,22 @@
           {%- endfor -%}
         </ul>
       </nav>
+
+      <div class="branding">
+        <div class="logo">
+          <a href="{{ routes.root_url }}">
+            <img src="{{ settings.logo | img_url: 'master' }}" alt="">
+          </a>
+        </div>
+      </div>
+
+      {% render 'header-search', input_id: 'Search-In-Modal' %}
+
+      {%- if shop.customer_accounts_enabled -%}
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" rel="nofollow">
+          <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
+        </a>
+      {%- endif -%}
 
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
