@@ -166,6 +166,18 @@ a {
   position: relative;
 }
 
+div[section_color="Primary color"] {
+  .btn {
+    background-color: #fff;
+    color: var(--primary-color);
+  }
+
+  .btn-secondary {
+    border-color: #fff;
+    color: #fff;
+  }
+}
+
 .text-wpr {
   blockquote {
     border-left: 4px solid #000;
