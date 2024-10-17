@@ -44,9 +44,11 @@
   <body>
     {% section 'header' %}
 
+    {% comment %}  
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }} 
     </main>
+    {% endcomment %}
 
     <h1 class="display">H1 text Display</h1>
     <h1>H1 text</h1>
@@ -58,9 +60,9 @@
     <p class="subheading lg">Subheading 1</p>
     <p class="subheading">Subheading 2</p>
 
-    <p class="lg">Paragraph</p>
+    <p class="lg">Paragraph large</p>
     <p>Paragraph</p>
-    <p class="sm">Paragraph</p>
+    <p class="sm">Paragraph small</p>
 
     <p class="block-text">Block text</p>
 
