@@ -183,4 +183,10 @@ a {
   }
 
   @include text_area_margin(20px);
+
+  > * {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
