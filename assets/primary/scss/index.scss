@@ -109,7 +109,7 @@ h6 {
 }
 
 %btn {
-  padding: 14px 80px;
+  padding: 14px 60px;
   background-color: var(--primary-color);
   color: #fff;
   font-size: 16px;
@@ -122,6 +122,7 @@ h6 {
   z-index: 0;
   outline: none;
   display: inline-block;
+  border: 1px solid var(--primary-color);
   border-radius: 0px;
   cursor: pointer;
   transition: background-color .3s ease, color .3s ease, border-color .3s ease;
@@ -129,4 +130,10 @@ h6 {
 
 .btn {
   @extend %btn;
+}
+
+.btn-secondary {
+  @extend %btn;
+  background-color: #fff;
+  color: var(--primary-color); 
 }
