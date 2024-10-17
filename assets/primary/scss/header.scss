@@ -1,0 +1,14 @@
+.header-main {
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav.header__inline-menu {
+      ul.main {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
