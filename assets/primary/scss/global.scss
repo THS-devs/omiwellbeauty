@@ -148,3 +148,38 @@ $dark_sections: '[section_color="Black"]', 'div[section_color="Primary color"]',
     }
   }
 }
+
+// Colored sections -------
+div[section_color="White"] {
+  @include section_size("White");
+}
+
+div[section_color="Grey"] {
+  background-color: root-var(grey);
+  @include section_size("Grey");
+}
+
+div[section_color="Black"] {
+  background-color: #000000;
+  @include section_size("Black");
+}
+
+div[section_color="Primary color"] {
+  background-color: var(--primary-color);
+  @include section_size("Primary color");
+}
+
+div[section_color="Primary color 2"] {
+  background-color: var(--primary-color-light);
+  @include section_size("Primary color");
+}
+
+div[section_color="Floral White"] {
+  background-color: var(--background);
+  @include section_size("Primary color");
+}
+
+div[section_color="Paper Lamb"] {
+  background-color: var(--background-dark);
+  @include section_size("Primary color");
+}
