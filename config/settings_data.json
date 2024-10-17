@@ -9,19 +9,12 @@
  */
 {
   "current": {
-    "logo_width": 90,
-    "type_header_font": "assistant_n4",
-    "type_body_font": "assistant_n4",
-    "predictive_search_enabled": true,
-    "predictive_search_show_vendor": false,
-    "predictive_search_show_price": false,
     "primary_color": "#2e1a4a",
-    "secondary_color": "#f4b4a4",
     "sections": {
       "header": {
         "type": "header",
         "settings": {
-          "menu": "main-menu",
+          "menu": "main-menu"
         }
       },
       "footer": {
@@ -47,23 +40,12 @@
           "footer-1"
         ],
         "settings": {
-          "show_policy": true,
+          "show_policy": true
         }
       }
     },
     "content_for_index": [
-    ],
-  },
-  "presets": {
-    "Default": {
-      "logo_width": 90,
-      "type_header_font": "assistant_n4",
-      "type_body_font": "assistant_n4",
-      "predictive_search_enabled": true,
-      "predictive_search_show_vendor": false,
-      "predictive_search_show_price": false,
-      "sections": {
-      }
-    }
+
+    ]
   }
 }
