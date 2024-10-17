@@ -3,6 +3,7 @@
 body {
   background-color: var(--background);
   margin: 0;
+  line-height: 1.2;
   color: var(--primary-color);
 }
 
@@ -12,6 +13,16 @@ p, li, a {
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 30px;
+  letter-spacing: 0.05em;
+
+  &.lg {
+    font-size: 20px;
+  }
+
+  &.sm {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
 }
 
 h1, h2, h3, h3, h4, h5, h6 {
@@ -26,6 +37,10 @@ h1, h2, h3, h3, h4, h5, h6 {
 
   @media (max-width: 1080px) {
     font-size: 45px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 35px;
   }
 
   &.display {
@@ -51,6 +66,10 @@ h1, .h1 {
   @media (max-width: 1080px) {
     font-size: 36px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 h2, .h2 {
@@ -62,6 +81,10 @@ h2, .h2 {
 
   @media (max-width: 1080px) {
     font-size: 28px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 25px;
   }
 }
 
