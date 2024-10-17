@@ -49,7 +49,8 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "hide-announcement-bar": false
+          "hide-announcement-bar": false,
+          "section-color": "Paper Lamb"
         }
       }
     },
