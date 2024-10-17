@@ -1,0 +1,122 @@
+.container-fluid {
+  padding: 0 60px;
+
+  &.lg {
+    max-width: 1350px;
+  }
+
+  &.md {
+    max-width: 960px;
+  }
+
+  &.sm {
+    max-width: 800px;
+  }
+
+  @media (max-width: 1275px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 1080px) {
+    padding: 0 20px;
+  }
+}
+
+.section {
+  padding: var(--section-spacing) 0;
+
+  @media (max-width: 768px) {
+    padding: calc(var(--section-spacing) / 2) 0;
+  }
+
+  +.section {
+    padding-top: 0;
+  }
+}
+
+// Section sizes -------------------------
+@mixin section_size($color, $DS_padding: false) {
+  &:not(.DS-padding) {
+    &[section_size="Normal"] {
+      padding: var(--section-spacing) 0;
+
+      @media (max-width: 768px) {
+        padding: calc(var(--section-spacing) / 2) 0;
+      }
+
+      @if $DS_padding !=true {
+        +div[section_color="#{$color}"]:not(.DS-padding):not([section_size="Forced - with space"]) {
+          padding-top: 0;
+        }
+      }
+
+      +div[section_color="#{$color}"]:not(.DS-padding):not([section_size="Forced - with space"]).no-padding-top {
+        padding-top: 0;
+      }
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    &[section_size="Small"] {
+      padding: calc(var(--section-spacing) / 2) 0;
+
+      @if $DS_padding !=true {
+        +div[section_color="#{$color}"]:not(.DS-padding):not([section_size="Forced - with space"]) {
+          padding-top: 0;
+        }
+      }
+
+      +div[section_color="#{$color}"]:not(.DS-padding):not([section_size="Forced - with space"]).no-padding-top {
+        padding-top: 0;
+      }
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    &[section_size="Forced - with space"] {
+      padding: var(--section-spacing) 0;
+
+      @media (max-width: 768px) {
+        padding: calc(var(--section-spacing) / 2) 0;
+      }
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    &[section_size="Forced - without space"] {
+      padding: 0;
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    &[section_size="Forced - No space top"] {
+      padding: 0 0 var(--section-spacing);
+
+      @media (max-width: 768px) {
+        padding: 0 0 calc(var(--section-spacing) / 2);
+      }
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+  }
+}
