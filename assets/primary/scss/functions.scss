@@ -111,8 +111,8 @@
 
   >p {
     >.btn {
-      margin-top: math.div($margin, 2);
-      margin-bottom: math.div($margin, 2);
+      margin-top: calc(#{$margin} / 2);
+      margin-bottom: calc(#{$margin} / 2);
     }
 
     >.btn:first-child {
