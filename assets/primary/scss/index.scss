@@ -114,6 +114,10 @@ h6 {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .block-text {
   text-transform: uppercase;
   font-size: 16px;
@@ -176,10 +180,6 @@ h6 {
     width: 100%;
     max-width: 100%;
     display: block; 
-  }
-
-  a:not([class]) {
-    text-decoration: underline;
   }
 
   @include text_area_margin(20px);
