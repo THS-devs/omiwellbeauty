@@ -139,6 +139,6 @@ h6 {
 
 .btn-secondary {
   @extend %btn;
-  background-color: var(--secondary-color);
+  background-color: transparent;
   color: var(--primary-color); 
 }
