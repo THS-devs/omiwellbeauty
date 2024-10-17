@@ -50,7 +50,7 @@
         "type": "announcement-bar",
         "settings": {
           "hide-announcement-bar": false,
-          "section-color": "Paper Lamb"
+          "section-color": "Secondary"
         }
       }
     },
