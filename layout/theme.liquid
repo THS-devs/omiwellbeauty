@@ -44,12 +44,6 @@
   <body>
     {% section 'header' %}
 
-    {% comment %}  
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }} 
-    </main>
-    {% endcomment %}
-
     <h1 class="display">H1 text Display</h1>
     <h1>H1 text</h1>
     <h2>H2 text</h2>
@@ -70,6 +64,10 @@
 
     <a class="btn" href="">Primary Btn</a>
     <a class="btn-secondary" href="">Secondary Btn</a>
+
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      {{ content_for_layout }} 
+    </main>
 
     {% section 'footer' %}
 
