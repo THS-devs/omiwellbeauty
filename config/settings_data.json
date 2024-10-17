@@ -45,6 +45,12 @@
         "settings": {
           "show_policy": true
         }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "hide-announcement-bar": true
+        }
       }
     },
     "content_for_index": [
