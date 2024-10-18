@@ -3,11 +3,11 @@ const mobile_toggle_close = document.querySelector('.icon-close');
 
 
 mobile_toggle_open.addEventListener('click', function (e) {
-  const mobile_toggle = document.getElementsByClassName('mobile-toggle');
-  mobile_toggle.classList.toggle('active');
+  const mobile_toggle = document.querySelector('.mobile-toggle');
+  mobile_toggle.classList.add('active');
 });
 mobile_toggle_close.addEventListener('click', function (e) {
-  const mobile_toggle = document.getElementsByClassName('mobile-toggle');
-  mobile_toggle.classList.toggle('active');
+  const mobile_toggle = document.querySelector('.mobile-toggle');
+  mobile_toggle.classList.remove('active');
 });
 
