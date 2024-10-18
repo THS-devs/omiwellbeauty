@@ -49,6 +49,8 @@
       }
 
       .header__icon--search {
+        list-style: none;
+        
         &::marker {
           display: none;
         }
