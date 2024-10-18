@@ -5,6 +5,21 @@
         <div class="flex-wpr">
           <div class="logo-wpr">
             <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0267/3537/8613/files/OmiLogo-Sand.webp?v=1729255966">
+
+            {%- for block in section.blocks -%} 
+              {%- if block.type == 'text' -%}
+                {% assign heading = block.settings.heading %}
+                {% assign subtitle = block.settings.subtitle %}
+
+                {%- if heading != blank -%}
+                  {{ heading }}
+                {%- endif -%}
+
+                {%- if subtitle != blank -%}
+
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
           </div>
           <div class="menu-wpr">
 
