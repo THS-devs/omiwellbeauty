@@ -9,7 +9,7 @@
 
     nav.header__inline-menu {
       width: calc(50% - 65px);
-      
+
       @media (max-width: 1080px) {
         display: none;
       }
@@ -37,8 +37,35 @@
       width: 20px;
       height: 20px;
 
-      .icon {
+      .icon-hamburger {
+        display: block;
+        position: absolute;
+        opacity: 1;
+        stroke-width: .15rem;
+        transform: scale(1);
+        height: 2rem;
+        width: 2rem;
+      }
 
+      .icon-close {
+        display: block;
+        position: absolute;
+        opacity: 1;
+        stroke-width: .15rem;
+        transform: scale(1);
+        height: 1.5rem;
+        width: 1.5rem;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(.8);
+      }
+
+      &.active {
+        .icon-close {
+          opacity: 1;
+          transform: scale(1.2) rotate(180deg);
+          transition: transform .15s ease, opacity .15s ease;
+        }
       }
     }
 
