@@ -42,8 +42,15 @@
       
       .header__icon--cart {
         margin-bottom: 0;
+
         img {
           max-width: 20px;
+        }
+      }
+
+      .header__icon--search {
+        &::marker {
+          display: none;
         }
       }
     }
