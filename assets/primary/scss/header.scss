@@ -35,14 +35,9 @@
     .mobile-toggle {
       width: 20px;
       height: 20px;
-      
+
       .icon {
-        display: block;
-        position: absolute;
-        opacity: 1;
-        stroke-width: .15rem;
-        transform: scale(1);
-        transition: transform .15s ease, opacity .15s ease;
+
       }
     }
 
