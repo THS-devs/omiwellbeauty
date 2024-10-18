@@ -28,7 +28,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "menu": "footer"
+              "menu": "omi-footer-menu-discover"
             }
           },
           "footer-1": {
