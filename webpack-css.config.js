@@ -89,7 +89,7 @@ module.exports = (env, argv) => {
     target: 'web',
     stats: {
       chunks: false,
-      warnings: false,
+      warnings: true,
       source: false,
       modules: false,
       assets: false
