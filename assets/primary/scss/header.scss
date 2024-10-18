@@ -33,14 +33,18 @@
       }
     }
 
-    .mobile-toggle {
-      width: 20px;
-      height: 20px;
+    .mobile-toggle-wpr {
+      width: calc(50% - 65px);
       display: none;
-
+      
       @media (max-width: 1080px) {
         display: block;
       }
+    }
+
+    .mobile-toggle {
+      width: 20px;
+      height: 20px;
 
       .icon-hamburger {
         display: block;
