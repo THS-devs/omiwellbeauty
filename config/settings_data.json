@@ -34,8 +34,8 @@
           "footer-1": {
             "type": "text",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+              "heading": "JOIN US",
+              "subtext": "<p>Subscribe to be notified about product launches, special offers, company news and more!</p>"
             }
           }
         },
