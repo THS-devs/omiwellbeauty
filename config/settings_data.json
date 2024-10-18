@@ -11,6 +11,7 @@
   "current": {
     "logo": "shopify://shop_images/Omi-Logo.webp",
     "logo_width": 130,
+    "favicon": "shopify://shop_images/favicon_21b89656-747a-4f1e-870a-97d9ce17e0ab.png",
     "primary_color": "#2e1a4a",
     "secondary_color": "#f4b4a4",
     "sections": {
