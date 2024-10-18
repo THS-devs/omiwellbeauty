@@ -8,6 +8,9 @@
     justify-content: space-between;
 
     nav.header__inline-menu {
+      @media (max-width: 1080px) {
+        display: none;
+      }
       width: calc(50% - 65px);
       ul.main {
         margin: 0;
