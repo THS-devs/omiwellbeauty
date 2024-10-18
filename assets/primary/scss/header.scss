@@ -50,9 +50,13 @@
 
       .header__icon--search {
         list-style: none;
-        
+
         &::marker {
           display: none;
+        }
+
+        img {
+          max-width: 20px;
         }
       }
     }
