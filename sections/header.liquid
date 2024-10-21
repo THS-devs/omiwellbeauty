@@ -116,7 +116,7 @@
                       <div class="disclosure">
                         <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" aria-expanded="false" aria-controls="AnnouncementCountryList" aria-describedby="AnnouncementCountryLabel">
                           {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
-                          {% render 'icon-caret' %}
+                          {% comment %} {% render 'icon-caret' %} {% endcomment %}
                         </button>
                         <div class="disclosure__list-wrapper" hidden>
                           <ul id="AnnouncementCountryList" role="list" class="disclosure__list list-unstyled">
@@ -138,7 +138,7 @@
               <div class="menu-drawer__utility-links">
                 {%- if shop.customer_accounts_enabled -%}
                   <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link focus-inset h5">
-                    {% render 'icon-account' %}
+                    {% comment %} {% render 'icon-account' %} {% endcomment %}
                     {%- liquid
                       if customer
                         echo 'customer.account_fallback' | t
