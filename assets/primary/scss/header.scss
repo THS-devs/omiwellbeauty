@@ -156,6 +156,7 @@
               margin-bottom: 0; 
               font-weight: 500;
               position: relative;
+              cursor: pointer;
 
               .icon-arrow {
                 position: absolute;
@@ -184,7 +185,7 @@
                   background-color: transparent;
                   border: none;
                   border-radius: 0;
-                  
+
                   .icon-arrow {
                     transform: rotate(180deg);
                     margin-right: 1rem;
