@@ -37,13 +37,36 @@
                         <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
                           <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
                             {{ link.title | escape }}
-                            {% comment %} {% render 'icon-arrow' %}
-                            {% render 'icon-caret' %} {% endcomment %}
+
+                            <svg
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              aria-hidden="true"
+                              focusable="false"
+                              class="icon icon-arrow"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path fill-rule="evenodd"  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" fill="currentColor"/>
+                            </svg>
+
+                            <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                            </svg>
+
                           </summary>
                           <div id="link-{{ link.handle | escape }}" class="menu-drawer__submenu has-submenu motion-reduce" tabindex="-1">
                             <div class="menu-drawer-inner-submenu">
                               <button class="menu-drawer-close-button link link--text focus-inset" aria-expanded="true">
-                                {% comment %} {% render 'icon-arrow' %} {% endcomment %}
+                                <svg
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  aria-hidden="true"
+                                  focusable="false"
+                                  class="icon icon-arrow"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path fill-rule="evenodd"  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" fill="currentColor"/>
+                                </svg>
                                 {{ link.title | escape }}
                               </button>
                               <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
@@ -57,12 +80,33 @@
                                       <details id="Details-menu-drawer-submenu-{{ forloop.index }}">
                                         <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
                                           {{ childlink.title | escape }}
-                                          {% comment %} {% render 'icon-arrow' %}
-                                          {% render 'icon-caret' %} {% endcomment %}
+                                          <svg
+                                            viewBox="0 0 16 16"
+                                            fill="none"
+                                            aria-hidden="true"
+                                            focusable="false"
+                                            class="icon icon-arrow"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path fill-rule="evenodd"  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" fill="currentColor"/>
+                                          </svg>
+
+                                          <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                                          </svg>
                                         </summary>
                                         <div id="childlink-{{ childlink.handle | escape }}" class="menu-drawer__submenu has-submenu motion-reduce">
                                           <button class="menu-drawer-close-button link link--text focus-inset" aria-expanded="true">
-                                            {% comment %} {% render 'icon-arrow' %} {% endcomment %}
+                                            <svg
+                                              viewBox="0 0 16 16"
+                                              fill="none"
+                                              aria-hidden="true"
+                                              focusable="false"
+                                              class="icon icon-arrow"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <path fill-rule="evenodd"  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" fill="currentColor"/>
+                                            </svg>
                                             {{ childlink.title | escape }}
                                           </button>
                                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
