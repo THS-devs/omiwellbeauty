@@ -121,6 +121,7 @@
         background-color: #fff;
         overflow-x: hidden;
         border-style: solid;
+        transition: .5s ease;
         height: calc(100vh - 150px);
 
         &.active {
