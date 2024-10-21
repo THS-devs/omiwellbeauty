@@ -111,9 +111,9 @@
 
                 {{ forloop.index > 2 }}
 
-                {%- if forloop.last and forloop.index > 2 -%}
+                {%- if forloop.last -%}
                   <div class="menu-container">
-                    
+                    <div class="footer-main-wpr">
                       {% assign heading = block.settings.heading %}
             
                       {% if heading != blank %}
