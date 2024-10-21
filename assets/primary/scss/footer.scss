@@ -113,9 +113,14 @@ footer.footer {
       }
 
       .footer-main-wpr {
-        
-        
-
+        .menu-heading {
+          h5 {
+            text-transform: uppercase;
+            font-family: var(--font-body-family);
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
       }
     }
   }
