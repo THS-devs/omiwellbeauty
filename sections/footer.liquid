@@ -9,7 +9,7 @@
             {%- for block in section.blocks -%} 
               {%- if block.type == 'text' -%}
                 {% assign heading = block.settings.heading %}
-                {% assign subtitle = block.settings.subtitle %}
+                {% assign subtitle = block.settings.subtext  %}
 
                 <div class="footer-text">
                   {%- if heading != blank -%}
@@ -26,19 +26,21 @@
           <div class="menu-wpr">
             {%- for block in section.blocks -%} 
               {%- if block.type == 'link_list' -%}
-                {% assign heading = block.settings.heading %}
+                <div class="footer-main-wpr">
+                  {% assign heading = block.settings.heading %}
 
-                {% if heading != blank %}
-                  {{ heading }}
-                {% endif %}
+                  {% if heading != blank %}
+                    <div class="menu-heading"><h5 class="block-text">{{ heading }}</h5></div>
+                  {% endif %}
 
-                <ul class="footer-main" role="list"> 
-                  {%- for link in block.settings.menu.links -%}
-                    <li class="item">
-                      <a href="{{ link.url }}">{{ link.title }}</a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
+                  <ul class="footer-main" role="list"> 
+                    {%- for link in block.settings.menu.links -%}
+                      <li class="item">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
               {%- endif -%}
             {%- endfor -%}
           </div>
