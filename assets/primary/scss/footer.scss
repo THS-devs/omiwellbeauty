@@ -49,6 +49,10 @@ footer.footer {
             &::placeholder {
               color: #fff;
             }
+
+            &:focus {
+              outline: none;
+            }
           }
         }
       }
