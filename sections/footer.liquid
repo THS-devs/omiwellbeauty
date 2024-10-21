@@ -82,10 +82,6 @@
           <div class="menu-wpr">
             {%- for block in section.blocks -%} 
               {%- if block.type == 'link_list' -%}
-                {% assign count = 1 %}
-                {% if count < 3 %}
-                  <div class="flex-wpr">
-                {% endif %}
                 <div class="footer-main-wpr">
                   {% assign heading = block.settings.heading %}
 
@@ -101,11 +97,7 @@
                     {%- endfor -%}
                   </ul>
                 </div>
-                {% assign count = count | plus: 1 %}
 
-                {% if count < 3 %}
-                </div>
-                {% endif %}
               {%- endif -%}
             {%- endfor -%}
           </div>
