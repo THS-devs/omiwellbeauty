@@ -28,7 +28,7 @@
               {%- if block.type == 'link_list' -%}
                 {% assign heading = block.settings.heading %}
 
-                {% if %}
+                {% if heading != blank %}
                   {{ heading }}
                 {% endif %}
 
