@@ -185,6 +185,16 @@
                   background-color: transparent;
                   border: none;
                   border-radius: 0;
+                  margin-top: 1.5rem;
+                  padding: 1.2rem 2.6rem;
+                  text-decoration: none;
+                  display: flex;
+                  align-items: center;
+                  font-size: 1.4rem;
+                  width: 100%;
+                  background-color: transparent;
+                  font-family: var(--font-body-family);
+                  text-align: left;
 
                   .icon-arrow {
                     transform: rotate(180deg);
