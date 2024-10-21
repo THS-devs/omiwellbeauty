@@ -33,6 +33,8 @@
 
     {% render 'root-variables' %}
 
+    <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
     {{ 'base.css' | asset_url | stylesheet_tag }} 
     {{ 'primary-min.css' | asset_url | stylesheet_tag }}
 
