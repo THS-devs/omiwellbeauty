@@ -64,49 +64,66 @@
       @media (max-width: 1080px) {
         display: block;
       }
-    }
 
-    .mobile-toggle {
-      width: 20px;
-      height: 20px;
-
-      .icon-hamburger {
-        display: block;
-        position: absolute;
-        opacity: 1;
-        stroke-width: .15rem;
-        transform: scale(1);
-        height: 20px;
+      .mobile-toggle {
         width: 20px;
-      }
-
-      .icon-close {
-        display: block;
-        position: absolute;
-        opacity: 1;
-        stroke-width: .15rem;
-        transform: scale(1);
         height: 20px;
-        width: 20px;
-        visibility: hidden;
-        opacity: 0;
-        transform: scale(.8);
-      }
 
-      &.active {
         .icon-hamburger {
+          display: block;
+          position: absolute;
+          opacity: 1;
+          stroke-width: .15rem;
+          transform: scale(1);
+          height: 20px;
+          width: 20px;
+        }
+
+        .icon-close {
+          display: block;
+          position: absolute;
+          opacity: 1;
+          stroke-width: .15rem;
+          transform: scale(1);
+          height: 20px;
+          width: 20px;
           visibility: hidden;
           opacity: 0;
           transform: scale(.8);
         }
-        .icon-close {
-          opacity: 1;
-          visibility: visible;
-          transform: scale(1.2) rotate(180deg);
-          transition: transform .15s ease, opacity .15s ease;
+
+        &.active {
+          .icon-hamburger {
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(.8);
+          }
+
+          .icon-close {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1.2) rotate(180deg);
+            transition: transform .15s ease, opacity .15s ease;
+          }
         }
       }
+
+      .mobile-menu-drawer {
+        position: absolute;
+        transform: translateY(100%);
+        visibility: hidden;
+        z-index: 3;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        padding: 0;
+        border-width: 0 0 0 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        border-style: solid;
+      }
     }
+
 
     .branding {
       width: 130px;
