@@ -114,16 +114,19 @@
         visibility: hidden;
         z-index: 3;
         left: 0;
-        top: 100%;
+        top: 150px;
         width: 100%;
         padding: 0;
         border-width: 0 0 0 0;
         background-color: #fff;
         overflow-x: hidden;
         border-style: solid;
-        height: 100vh;
-        transform: translate(0);
-        visibility: visible;
+        height: calc(100vh - 150px);
+
+        &.active {
+          transform: translate(0);
+          visibility: visible;
+        }
       }
     }
 
