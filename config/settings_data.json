@@ -18,7 +18,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "menu": "main-menu"
+          "menu": "omi-main-menu"
         }
       },
       "footer": {
