@@ -84,7 +84,7 @@
               {%- if block.type == 'link_list' -%}
                 
                 {%- if forloop.index == 1 -%}
-                  <div class="first-two-container">
+                  <div class="menu-container">
                 {%- endif -%}
 
                 <div class="footer-main-wpr">
@@ -108,7 +108,7 @@
                 {%- endif -%}
 
                 {%- if forloop.last and forloop.index > 2 -%}
-                  <div class="last-container">
+                  <div class="menu-container">
                     <div class="footer-main-wpr">
                       {% assign heading = block.settings.heading %}
             
