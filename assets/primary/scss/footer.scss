@@ -41,6 +41,15 @@ footer.footer {
 
           .social-icon {
             flex-grow: 1;
+            max-width: 25px;
+
+            &.youtube {
+              max-width: 28px;
+            }
+
+            img {
+              width: 100%;
+            }
           }
         }
       }
