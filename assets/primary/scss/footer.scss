@@ -21,10 +21,11 @@ footer.footer {
 
     .menu-wpr {
       width: 60%;
+      display: flex;
+      flex-wrap: wrap;
       
       .footer-main-wpr {
-        display: flex;
-        flex-wrap: wrap;
+        width: 50%;
       }
     }
   }
