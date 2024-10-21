@@ -208,6 +208,12 @@ footer.footer {
     padding: 0;
     margin: 0;
     list-style: none;
+
+    a {
+      @media (max-width: 568px) {
+        font-size: 14px;
+      }
+    }
   }
 
   .footer__copyright {
