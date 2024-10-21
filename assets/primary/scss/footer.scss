@@ -150,6 +150,7 @@ footer.footer {
                 left: 0;
                 background-color: #fff;
                 transform: scaleX(0);
+                transform-origin: left;
                 transition: .3s ease;
               }
 
