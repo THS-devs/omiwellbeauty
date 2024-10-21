@@ -209,6 +209,10 @@ footer.footer {
     margin: 0;
     list-style: none;
 
+    @media (max-width: 568px) {
+      display: block;
+    }
+
     a {
       @media (max-width: 568px) {
         font-size: 14px;
@@ -220,6 +224,10 @@ footer.footer {
     .copyright__content {
       text-align: center;
       margin-bottom: 0;
+
+      @media (max-width: 568px) {
+        font-size: 14px;
+      }
     }
   }
 }
