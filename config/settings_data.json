@@ -31,6 +31,13 @@
               "menu": "omi-footer-menu-discover"
             }
           },
+          "link_list_ifgHBC": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Discover",
+              "menu": "footer"
+            }
+          },
           "footer-1": {
             "type": "text",
             "settings": {
@@ -41,6 +48,7 @@
         },
         "block_order": [
           "footer-0",
+          "link_list_ifgHBC",
           "footer-1"
         ],
         "settings": {
