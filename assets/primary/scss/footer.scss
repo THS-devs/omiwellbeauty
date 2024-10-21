@@ -9,6 +9,16 @@ footer.footer {
 
   .flex-wpr {
     display: flex;
-    
+    justify-content: space-between;
+
+    .logo-wpr {
+      img {
+        max-width: 250px;
+      }
+    }
+
+    .menu-wpr {
+      width: 60%;
+    }
   }
 }
