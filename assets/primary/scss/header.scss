@@ -174,11 +174,22 @@
                 width: 100%;
                 bottom: 0;
                 left: 0;
-                background-color: rgb(var(--color-background));
+                background-color: #fff;
                 border-left: .1rem solid rgba(var(--color-foreground), .2);
                 z-index: 1;
                 transform: translate(100%);
                 visibility: hidden;
+
+                .menu-drawer-close-button {
+                  background-color: transparent;
+                  border: none;
+                  border-radius: 0;
+                  
+                  .icon-arrow {
+                    transform: rotate(180deg);
+                    margin-right: 1rem;
+                  }
+                }
               }
 
               &[open] {
