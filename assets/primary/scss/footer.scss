@@ -135,7 +135,7 @@ footer.footer {
           list-style: none;
 
           li.item {
-            margin-bottom: 12px;
+            margin-bottom: 13px;
 
             a {
               font-weight: 300;
@@ -146,7 +146,7 @@ footer.footer {
                 height: 1px;
                 width: 100%;
                 position: absolute;
-                bottom: 0;
+                bottom: -3px;
                 left: 0;
                 background-color: #fff;
                 transform: scaleX(0);
