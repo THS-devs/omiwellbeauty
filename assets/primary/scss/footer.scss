@@ -211,6 +211,13 @@ footer.footer {
 
     @media (max-width: 568px) {
       display: block;
+      text-align: center;
+    }
+
+    li {
+      @media (max-width: 568px) {
+        margin-bottom: 12px;
+      }
     }
 
     a {
