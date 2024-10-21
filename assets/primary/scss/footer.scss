@@ -105,12 +105,14 @@ footer.footer {
 
     .menu-wpr {
       width: 40%;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
       
       .footer-main-wpr {
         width: 50%;
         display: block;
+
+        
+
       }
     }
   }
