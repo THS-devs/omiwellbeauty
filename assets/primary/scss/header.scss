@@ -125,10 +125,32 @@
         border-style: solid;
         transition: .5s ease;
         height: calc(100vh - 150px);
+        display: none;
+
+        @media (max-width: 1080px) {
+          display: block;
+        }
 
         &.active {
           transform: translate(0);
           visibility: visible;
+        }
+
+        .menu-drawer__menu {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+
+          li {
+            margin-bottom: 0;
+
+            a {
+              display: flex;
+              align-items: center;
+              text-transform: uppercase;
+              padding: 1.1rem 3.2rem;
+            }
+          }
         }
       }
     }
