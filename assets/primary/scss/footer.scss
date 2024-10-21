@@ -133,11 +133,20 @@ footer.footer {
 
       @media (max-width: 1080px) {
         width: 100%;
+        gap: 30px;
+      }
+
+      @media (max-width: 568px) {
+        display: block;
       }
 
       .menu-container {
         width: 50%;
         display: block;
+
+        @media (max-width: 568px) {
+          width: 100%;
+        }
       }
 
       .footer-main-wpr {
