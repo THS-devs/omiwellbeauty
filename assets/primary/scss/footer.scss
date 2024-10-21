@@ -144,6 +144,13 @@ footer.footer {
     }
   }
 
+  .policies {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
   .footer__copyright {
     .copyright__content {
       text-align: center;
