@@ -29,13 +29,55 @@
               </form>
             </div>
 
-            <div class="social-icons">
-              {%- for block in section.blocks -%} 
-                {%- if block.type == 'social_icons' -%}
-                  
-                {%- endif -%}
-              {%- endfor -%}
-            </div>
+            {%- for block in section.blocks -%} 
+              {%- if block.type == 'social_icons' -%}
+                <div class="social-icons-wpr">
+                  <div class="social-icons">
+                    {% assign facebook_image = block.settings.facebook_image %}
+                    {% assign facebook_link = block.settings.facebook_link %}
+                    {% assign tiktok_image = block.settings.tiktok_image %}
+                    {% assign tiktok_link = block.settings.tiktok_link %}
+                    {% assign instagram_image = block.settings.instagram_image %}
+                    {% assign instagram_link = block.settings.instagram_link %}
+                    {% assign youtube_image = block.settings.youtube_image %}
+                    {% assign youtube_link = block.settings.youtube_link %}
+
+                    {% if facebook_image != blank or facebook_link != blank %}
+                      <div class="social-icon facebook">
+                        <a href="{{ facebook_link }}">
+                          <img src="{{ facebook_image }}">
+                        </a>
+                      </div>
+                    {% endif %}
+
+                    {% if tiktok_image != blank or tiktok_link != blank %}
+                      <div class="social-icon tiktok">
+                        <a href="{{ tiktok_link }}">
+                          <img src="{{ tiktok_image }}">
+                        </a>
+                      </div>
+                    {% endif %}
+
+                    {% if instagram_image != blank or instagram_link != blank %}
+                      <div class="social-icon instagram">
+                        <a href="{{ instagram_link }}">
+                          <img src="{{ instagram_image }}">
+                        </a>
+                      </div>
+                    {% endif %}
+
+                    {% if youtube_image != blank or youtube_link != blank %}
+                      <div class="social-icon youtube">
+                        <a href="{{ youtube_link }}">
+                          <img src="{{ youtube_image }}">
+                        </a>
+                      </div>
+                    {% endif %}
+                    
+                  </div>
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
           </div>
           <div class="menu-wpr">
             {%- for block in section.blocks -%} 
