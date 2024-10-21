@@ -51,13 +51,19 @@
               "heading": "JOIN US",
               "subtext": "<p>Subscribe to be notified about product launches, special offers, company news and more!</p>"
             }
+          },
+          "social_icons_VP9CKF": {
+            "type": "social_icons",
+            "settings": {
+            }
           }
         },
         "block_order": [
           "footer-0",
           "link_list_QdpnAa",
           "link_list_ifgHBC",
-          "footer-1"
+          "footer-1",
+          "social_icons_VP9CKF"
         ],
         "settings": {
           "show_policy": true
