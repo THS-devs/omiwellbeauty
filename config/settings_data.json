@@ -51,13 +51,27 @@
               "heading": "JOIN US",
               "subtext": "<p>Subscribe to be notified about product launches, special offers, company news and more!</p>"
             }
+          },
+          "social_icons_VP9CKF": {
+            "type": "social_icons",
+            "settings": {
+              "facebook_image": "shopify://shop_images/facebook-icon.webp",
+              "facebook_link": "https://www.facebook.com/?locale=en_GB",
+              "tiktok_image": "shopify://shop_images/tiktok-icon.webp",
+              "tiktok_link": "https://www.tiktok.com/en/",
+              "instagram_image": "shopify://shop_images/instagram-icon.webp",
+              "instagram_link": "https://www.instagram.com/",
+              "youtube_image": "shopify://shop_images/youtube-icon-omi.webp",
+              "youtube_link": "https://www.youtube.com/"
+            }
           }
         },
         "block_order": [
           "footer-0",
           "link_list_QdpnAa",
           "link_list_ifgHBC",
-          "footer-1"
+          "footer-1",
+          "social_icons_VP9CKF"
         ],
         "settings": {
           "show_policy": true
