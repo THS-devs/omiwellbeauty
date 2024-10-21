@@ -33,10 +33,23 @@ footer.footer {
         }
       }
 
+      .form-wpr {
+        margin-bottom: 50px;
+
+        form {
+          input {
+            background-color: transparent;
+            border-radius: 0;
+            border: 1px solid #fff;
+          }
+        }
+      }
+
       .social-icons-wpr {
         .social-icons {
           display: flex;
           align-items: center;
+          justify-content: center;
           gap: 34px;
 
           .social-icon {
