@@ -49,11 +49,11 @@ footer.footer {
             font-weight: 500;
             font-family: var(--font-body-family);
             letter-spacing: 0.05em;
-            text-transform: uppercase;
+            text-transform: none;
 
             &::placeholder {
               color: #fff;
-              text-transform: none;
+              text-transform: uppercase;
             }
 
             &:focus, &:focus-visible {
