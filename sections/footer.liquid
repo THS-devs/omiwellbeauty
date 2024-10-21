@@ -25,7 +25,7 @@
           </div>
           <div class="menu-wpr">
             {%- for block in section.blocks -%} 
-              {%- if block.type == 'menu' -%}
+              {%- if block.type == 'link_list' -%}
                 {% assign heading = block.settings.heading %}
 
                 {% if %}
