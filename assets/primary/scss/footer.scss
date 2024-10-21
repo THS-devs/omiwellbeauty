@@ -15,7 +15,7 @@ footer.footer {
       width: 40%;
       text-align: center;
 
-      img {
+      img:not(.social-icon) {
         max-width: 250px;
       }
 
@@ -30,6 +30,14 @@ footer.footer {
 
         p:not(.block-text) {
           line-height: 1.5;
+        }
+      }
+
+      .social-icons-wpr {
+        .social-icons {
+          display: flex;
+          align-items: center;
+          gap: 34px;
         }
       }
     }
