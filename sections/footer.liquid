@@ -24,7 +24,23 @@
             {%- endfor -%}
           </div>
           <div class="menu-wpr">
+            {%- for block in section.blocks -%} 
+              {%- if block.type == 'menu' -%}
+                {% assign heading = block.settings.heading %}
 
+                {% if %}
+                  {{ heading }}
+                {% endif %}
+
+                <ul class="footer-main" role="list"> 
+                  {%- for link in block.settings.menu.links -%}
+                    <li class="item">
+                      <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            {%- endfor -%}
           </div>
         </div>
       </div>
