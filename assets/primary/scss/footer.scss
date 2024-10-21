@@ -53,6 +53,7 @@ footer.footer {
 
             &::placeholder {
               color: #fff;
+              text-transform: none;
             }
 
             &:focus, &:focus-visible {
