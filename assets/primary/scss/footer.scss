@@ -139,6 +139,25 @@ footer.footer {
 
             a {
               font-weight: 300;
+              position: relative;
+
+              &:after {
+                content: "";
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: #fff;
+                transform: scaleX(0);
+                transition: .3s ease;
+              }
+
+              &:hover {
+                &:after {
+                  transform: scaleX(1);
+                }
+              }
             }
           }
         }
@@ -158,6 +177,7 @@ footer.footer {
   .footer__copyright {
     .copyright__content {
       text-align: center;
+      margin-bottom: 0;
     }
   }
 }
