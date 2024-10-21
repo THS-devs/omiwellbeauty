@@ -12,9 +12,18 @@ footer.footer {
     justify-content: space-between;
     margin-bottom: 50px;
 
+    @media (max-width: 1080px) {
+      display: block;
+    }
+
     .logo-wpr {
       width: 40%;
       text-align: center;
+
+      @media (max-width: 1080px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
 
       img:not(.social-icon) {
         max-width: 250px;
@@ -110,6 +119,14 @@ footer.footer {
       display: flex;
       gap: 60px;
 
+      @media (max-width: 1280px) {
+        width: 50%;
+      }
+
+      @media (max-width: 1080px) {
+        width: 100%;
+      }
+
       .menu-container {
         width: 50%;
         display: block;
@@ -135,7 +152,7 @@ footer.footer {
           list-style: none;
 
           li.item {
-            margin-bottom: 13px;
+            margin-bottom: 15px;
 
             a {
               font-weight: 300;
