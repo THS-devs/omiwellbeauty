@@ -11,13 +11,15 @@
                 {% assign heading = block.settings.heading %}
                 {% assign subtitle = block.settings.subtitle %}
 
-                {%- if heading != blank -%}
-                  {{ heading }}
-                {%- endif -%}
+                <div class="footer-text">
+                  {%- if heading != blank -%}
+                    {{ heading }}
+                  {%- endif -%}
 
-                {%- if subtitle != blank -%}
-
-                {%- endif -%}
+                  {%- if subtitle != blank -%}
+                    {{ subtitle }}
+                  {%- endif -%}
+                </div>
               {%- endif -%}
             {%- endfor -%}
           </div>
