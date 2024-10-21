@@ -50,7 +50,7 @@ footer.footer {
               color: #fff;
             }
 
-            &:focus {
+            &:focus, &:focus-visible {
               outline: none;
             }
           }
