@@ -92,7 +92,7 @@
                   {%- endfor -%}
                 </ul>
               </nav>
-              <div class="menu-drawer__localization">
+              {% comment %} <div class="menu-drawer__localization">
                 <noscript>
                   {%- form 'localization', id: 'AnnouncementCountryFormNoScript', class: 'localization-form' -%}
                     <div class="localization-form__select">
@@ -148,7 +148,7 @@
                     -%}
                   </a>
                 {%- endif -%}
-              </div>
+              </div> {% endcomment %}
             </div>
           </div>
         </div>
