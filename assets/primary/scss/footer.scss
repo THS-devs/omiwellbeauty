@@ -41,13 +41,26 @@ footer.footer {
 
           .social-icon {
             max-width: 25px;
+            max-height: 25px;
+
+            &.tiktok {
+              max-width: 22px;
+              max-height: 25px;
+            }
+
+            &.insagram {
+              max-width: 23px;
+              max-height: 23px;
+            }
 
             &.youtube {
               max-width: 28px;
+              max-height: 19px;
             }
 
             img {
               width: 100%;
+              height: 100%;
             }
           }
         }
