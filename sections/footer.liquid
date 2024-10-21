@@ -45,7 +45,7 @@
                     {% if facebook_image != blank or facebook_link != blank %}
                       <div class="social-icon facebook">
                         <a href="{{ facebook_link }}">
-                          <img src="{{ facebook_image }}">
+                          {{ facebook_image | image_url: width: 1500 | image_tag }}
                         </a>
                       </div>
                     {% endif %}
@@ -53,7 +53,7 @@
                     {% if tiktok_image != blank or tiktok_link != blank %}
                       <div class="social-icon tiktok">
                         <a href="{{ tiktok_link }}">
-                          <img src="{{ tiktok_image }}">
+                          {{ tiktok_image | image_url: width: 1500 | image_tag }}
                         </a>
                       </div>
                     {% endif %}
@@ -61,7 +61,7 @@
                     {% if instagram_image != blank or instagram_link != blank %}
                       <div class="social-icon instagram">
                         <a href="{{ instagram_link }}">
-                          <img src="{{ instagram_image }}">
+                          {{ instagram_image | image_url: width: 1500 | image_tag }}
                         </a>
                       </div>
                     {% endif %}
@@ -69,7 +69,7 @@
                     {% if youtube_image != blank or youtube_link != blank %}
                       <div class="social-icon youtube">
                         <a href="{{ youtube_link }}">
-                          <img src="{{ youtube_image }}">
+                          {{ youtube_image | image_url: width: 1500 | image_tag }}
                         </a>
                       </div>
                     {% endif %}
