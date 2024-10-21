@@ -23,9 +23,15 @@
               {%- endif -%}
             {%- endfor -%}
 
-            <form>
-              <input type="email" value="" placeholder="Enter Your Email">
-            </form>
+            <div class="form-wpr">
+              <form>
+                <input type="email" value="" placeholder="Enter Your Email">
+              </form>
+            </div>
+
+            <div class="social-icons">
+
+            </div>
           </div>
           <div class="menu-wpr">
             {%- for block in section.blocks -%} 
@@ -153,6 +159,22 @@
             }
           ],
           "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "social_icons",
+      "name": "Social Icons",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "Link"
         }
       ]
     }
