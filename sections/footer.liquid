@@ -30,7 +30,11 @@
             </div>
 
             <div class="social-icons">
-
+              {%- for block in section.blocks -%} 
+                {%- if block.type == 'social_icons' -%}
+                  
+                {%- endif -%}
+              {%- endfor -%}
             </div>
           </div>
           <div class="menu-wpr">
