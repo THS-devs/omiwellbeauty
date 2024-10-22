@@ -56,13 +56,13 @@
             "type": "social_icons",
             "settings": {
               "facebook_image": "shopify://shop_images/facebook-icon.webp",
-              "facebook_link": "https://www.facebook.com/?locale=en_GB",
+              "facebook_link": "https://www.facebook.com/omibynaomi",
               "tiktok_image": "shopify://shop_images/tiktok-icon.webp",
-              "tiktok_link": "https://www.tiktok.com/en/",
+              "tiktok_link": "",
               "instagram_image": "shopify://shop_images/instagram-icon.webp",
-              "instagram_link": "https://www.instagram.com/",
+              "instagram_link": "https://www.instagram.com/omibynaomi/",
               "youtube_image": "shopify://shop_images/youtube-icon-omi.webp",
-              "youtube_link": "https://www.youtube.com/"
+              "youtube_link": ""
             }
           }
         },
