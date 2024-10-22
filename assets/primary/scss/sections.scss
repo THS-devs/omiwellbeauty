@@ -1,5 +1,11 @@
 .section {
   &.announcement-bar {
     padding: 10px 0;
+
+    .text {
+      &.white {
+        color: #fff;
+      }
+    }
   }
 }
