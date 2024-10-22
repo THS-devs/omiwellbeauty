@@ -10,7 +10,7 @@
 
 <details-modal class="header__search">
   <details>
-    <div class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+    <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
       <span>
         <span class="svg-wrapper">
           <img src="https://cdn.shopify.com/s/files/1/0267/3537/8613/files/search-icon.webp?v=1729251835">
@@ -19,7 +19,7 @@
           {{- 'icon-close.svg' | inline_asset_content -}}
         </span>
       </span>
-    </div>
+    </summary>
     <div class="search-modal modal__content gradient" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
       <div class="modal-overlay"></div>
       <div class="search-modal__content" tabindex="-1" >
