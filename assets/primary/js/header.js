@@ -23,18 +23,18 @@ closeButton.addEventListener('click', function (e) {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const glide = new Glide('.glide', {
-    type: 'carousel',
-    perView: 1,
-    autoplay: 3000,
-    hoverpause: true,
-    // breakpoints: {
-    //   1024: { perView: 3 },
-    //   768: { perView: 2 },
-    //   480: { perView: 1 },
-    // },
-  });
+// document.addEventListener('DOMContentLoaded', function () {
+//   const glide = new Glide('.glide', {
+//     type: 'carousel',
+//     perView: 1,
+//     autoplay: 3000,
+//     hoverpause: true,
+//     // breakpoints: {
+//     //   1024: { perView: 3 },
+//     //   768: { perView: 2 },
+//     //   480: { perView: 1 },
+//     // },
+//   });
 
-  glide.mount();
-});
+//   glide.mount();
+// });
