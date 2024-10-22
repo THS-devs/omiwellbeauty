@@ -250,6 +250,10 @@
             cursor: pointer;
           }
         }
+
+        summary::-webkit-details-marker {
+          display: none;
+        }
       
         .search-modal {
           position: absolute;
