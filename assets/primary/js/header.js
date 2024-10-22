@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
     perView: 1,
     autoplay: 3000,
     hoverpause: true,
-    breakpoints: {
-      1024: { perView: 3 },
-      768: { perView: 2 },
-      480: { perView: 1 },
-    },
+    // breakpoints: {
+    //   1024: { perView: 3 },
+    //   768: { perView: 2 },
+    //   480: { perView: 1 },
+    // },
   });
 
   glide.mount();
