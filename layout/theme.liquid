@@ -25,18 +25,18 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
-    {% comment %} <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
     />
 
     <!-- Glide JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script> {% endcomment %}
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
 
 
     {% render 'meta-tags' %}
 
-    {% comment %} <script src="{{ 'primary-min.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+    <script src="{{ 'primary-min.js' | asset_url }}" defer="defer"></script>
 
     {{ content_for_header }}
 
