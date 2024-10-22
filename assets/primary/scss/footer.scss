@@ -8,7 +8,7 @@ footer.footer {
   }
 
   @media (max-width: 568px) {
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
 
   a {
@@ -30,7 +30,7 @@ footer.footer {
 
       @media (max-width: 1080px) {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
       }
 
       img:not(.social-icon) {
@@ -56,7 +56,7 @@ footer.footer {
         margin-bottom: 50px;
 
         @media (max-width: 768px) {
-          margin-bottom: 20px;
+          margin-bottom: 40px;
         }
 
         form {
@@ -238,7 +238,13 @@ footer.footer {
       margin-bottom: 0;
 
       @media (max-width: 568px) {
-        font-size: 14px;
+        font-size: 12px;
+      }
+
+      a {
+        @media (max-width: 568px) {
+          font-size: 12px;
+        }
       }
     }
   }

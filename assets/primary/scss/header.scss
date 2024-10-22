@@ -274,6 +274,10 @@
           width: 100%;
           background-color: #fff;
 
+          @media (max-width: 768px) {
+            top: 115px;
+          }
+
           .search.search-modal__form {
             display: flex;
             flex-direction: column;
