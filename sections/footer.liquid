@@ -42,7 +42,7 @@
                     {% assign youtube_image = block.settings.youtube_image %}
                     {% assign youtube_link = block.settings.youtube_link %}
 
-                    {% if facebook_image != blank or facebook_link != blank %}
+                    {% if facebook_image != blank and facebook_link != blank %}
                       <div class="social-icon facebook">
                         <a href="{{ facebook_link }}">
                           {{ facebook_image | image_url: width: 50 | image_tag }}
@@ -50,7 +50,7 @@
                       </div>
                     {% endif %}
 
-                    {% if tiktok_image != blank or tiktok_link != blank %}
+                    {% if tiktok_image != blank and tiktok_link != blank %}
                       <div class="social-icon tiktok">
                         <a href="{{ tiktok_link }}">
                           {{ tiktok_image | image_url: width: 50 | image_tag }}
@@ -58,7 +58,7 @@
                       </div>
                     {% endif %}
 
-                    {% if instagram_image != blank or instagram_link != blank %}
+                    {% if instagram_image != blank and instagram_link != blank %}
                       <div class="social-icon instagram">
                         <a href="{{ instagram_link }}">
                           {{ instagram_image | image_url: width: 50 | image_tag }}
@@ -66,7 +66,7 @@
                       </div>
                     {% endif %}
 
-                    {% if youtube_image != blank or youtube_link != blank %}
+                    {% if youtube_image != blank and youtube_link != blank %}
                       <div class="social-icon youtube">
                         <a href="{{ youtube_link }}">
                           {{ youtube_image | image_url: width: 50 | image_tag }}
