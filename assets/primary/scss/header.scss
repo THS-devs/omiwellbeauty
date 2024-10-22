@@ -237,17 +237,19 @@
         }
       }
 
-      .header__icon--search {
-        list-style: none;
-
-        &::marker {
-          display: none;
+      .header__search {
+        .header__icon--search {
+          list-style: none;
+      
+          &::marker {
+            display: none;
+          }
+      
+          img {
+            max-width: 20px;
+          }
         }
-
-        img {
-          max-width: 20px;
-        }
-
+      
         .search-modal {
           position: absolute;
           top: 0;
