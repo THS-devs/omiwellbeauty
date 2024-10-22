@@ -25,6 +25,16 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
     {% render 'meta-tags' %}
 
     <script src="{{ 'primary-min.js' | asset_url }}" defer="defer"></script>
@@ -35,6 +45,8 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }} 
     {{ 'primary-min.css' | asset_url | stylesheet_tag }}
+
+    
 
     
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
