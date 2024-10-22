@@ -21,3 +21,5 @@ const swiper = new Swiper('.swiper', {
     },
   },
 }); 
+
+console.log('hello');
