@@ -269,12 +269,17 @@
 
               .search__input {
                 width: 100%;
+                padding: 8px;
+                border-radius: 0;
+                border: none;
+                border: 1px solid var(--primary-color);
               }
             }
 
             button {
               border: none;
               background-color: transparent;
+              border: 1px solid 
             }
           }
         }
