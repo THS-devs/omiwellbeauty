@@ -8,7 +8,6 @@ mobile_toggle_open.addEventListener('click', function (e) {
   const mobile_toggle = document.querySelector('.mobile-toggle');
   mobile_toggle.classList.add('active');
   mobile_menu_drawer.classList.add('active');
-  console.log('hello');
 });
 
 mobile_toggle_close.addEventListener('click', function (e) {
@@ -25,30 +24,17 @@ closeButton.addEventListener('click', function (e) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    loop: true,
-
-    // Autoplay settings
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-
-    // Responsive breakpoints
+  const glide = new Glide('.glide', {
+    type: 'carousel',
+    perView: 3,
+    autoplay: 3000,
+    hoverpause: true,
     breakpoints: {
-      1024: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      480: {
-        slidesPerView: 1,
-      },
+      1024: { perView: 3 },
+      768: { perView: 2 },
+      480: { perView: 1 },
     },
   });
 
-  console.log('hello');
-
+  glide.mount();
 });
