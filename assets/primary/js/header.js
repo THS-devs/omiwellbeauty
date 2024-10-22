@@ -26,7 +26,7 @@ closeButton.addEventListener('click', function (e) {
 document.addEventListener('DOMContentLoaded', function () {
   const glide = new Glide('.glide', {
     type: 'carousel',
-    perView: 3,
+    perView: 1,
     autoplay: 3000,
     hoverpause: true,
     breakpoints: {
