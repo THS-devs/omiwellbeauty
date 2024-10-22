@@ -256,6 +256,11 @@
           left: 0;
           width: 100%;
           background-color: #fff;
+
+          .search.search-modal__form {
+            display: flex;
+            flex-direction: column;
+          }
         }
       }
     }
