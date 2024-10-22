@@ -42,7 +42,7 @@
 
     {% render 'root-variables' %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }} 
+    {% comment %} {{ 'base.css' | asset_url | stylesheet_tag }}  {% endcomment %}
     {{ 'primary-min.css' | asset_url | stylesheet_tag }}
 
     
