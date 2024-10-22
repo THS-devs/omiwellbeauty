@@ -36,7 +36,7 @@
 
     {% render 'meta-tags' %}
 
-    <script src="{{ 'primary-min.js' | asset_url }}" defer="defer"></script>
+    {% comment %} <script src="{{ 'primary-min.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 
     {{ content_for_header }}
 
