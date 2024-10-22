@@ -9,7 +9,7 @@
 
               {% if text != blank %}
                 <div class="slide-item">
-                  <div class="text">{{ text }}</div>
+                  <div class="text {{ block.settings.text_color }}">{{ text }}</div>
                 </div>
               {% endif %}
             {%- endif -%}
