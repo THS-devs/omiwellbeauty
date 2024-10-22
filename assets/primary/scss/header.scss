@@ -274,7 +274,7 @@
                 border: none;
                 border: 1px solid var(--primary-color);
 
-                &::focus {
+                &::focus-visible {
                   outline: none;
                 }
               }
@@ -283,7 +283,8 @@
             button {
               border: none;
               background-color: transparent;
-              border: 1px solid 
+              border: 1px solid #000;
+              cursor: pointer;
             }
           }
         }
