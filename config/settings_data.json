@@ -99,7 +99,8 @@
         ],
         "settings": {
           "hide-announcement-bar": false,
-          "section-color": "Secondary"
+          "section-color": "Secondary",
+          "text_color": "white"
         }
       }
     },
