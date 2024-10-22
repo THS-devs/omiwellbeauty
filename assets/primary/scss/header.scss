@@ -131,6 +131,10 @@
           display: block;
         }
 
+        @media (max-width: 768px) {
+          top: 115px;
+        }
+
         &.active {
           transform: translate(0);
           visibility: visible;
