@@ -54,6 +54,10 @@ footer.footer {
       .form-wpr {
         margin-bottom: 50px;
 
+        @media (max-width: 768px) {
+          margin-bottom: 20px;
+        }
+
         form {
           input {
             background-color: transparent;
@@ -169,7 +173,7 @@ footer.footer {
           list-style: none;
 
           li.item {
-            margin-bottom: 15px;
+            margin-bottom: 18px;
 
             a {
               font-weight: 300;
