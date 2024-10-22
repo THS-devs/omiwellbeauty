@@ -23,28 +23,31 @@ closeButton.addEventListener('click', function (e) {
   }
 });
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
 
-  // Autoplay settings
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+    // Autoplay settings
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
 
-  // Responsive breakpoints
-  breakpoints: {
-    1024: {
-      slidesPerView: 1,
+    // Responsive breakpoints
+    breakpoints: {
+      1024: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 1,
+      },
     },
-    768: {
-      slidesPerView: 1,
-    },
-    480: {
-      slidesPerView: 1,
-    },
-  },
+  });
+
+  console.log('hello');
+
 });
-
-console.log('hello');
