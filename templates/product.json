@@ -111,9 +111,9 @@
         "padding_top": 36,
         "padding_bottom": 12
       }
-    },
+    }
   },
   "order": [
-    "main",
+    "main"
   ]
 }
