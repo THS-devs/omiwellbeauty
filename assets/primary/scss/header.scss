@@ -319,9 +319,11 @@
             button {
               border: none;
               background-color: transparent;
-              border: 1px solid #000;
+              border: 1px solid var(--primary-color);
+              color: var(--primary-color);
               cursor: pointer;
               font-family: var(--font-body-family);
+              padding: 8px 24px;
             }
           }
         }
