@@ -19,5 +19,9 @@
     font-family: var(--font-body-family) !important;
     font-weight: 500 !important;
 
+    span {
+      font-size: 16px;
+      color: var(--primary-color);
+    }
   }
 }
