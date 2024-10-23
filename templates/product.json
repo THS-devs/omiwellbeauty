@@ -6,7 +6,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.vendor }}",
+            "text": "Vendor Name", // Replace with actual text or handle in Liquid files
             "text_style": "uppercase"
           }
         },
@@ -16,7 +16,7 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text": "Product Subtitle", // Replace with actual text or handle in Liquid files
             "text_style": "subtitle"
           }
         },
@@ -35,18 +35,18 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_dynamic_checkout": true
+            // Remove "show_gift_card_recipient" if unsupported
           }
         },
         "description": {
           "type": "description"
         },
         "collapsible-row-0": {
-          "type": "collapsible_tab",
+          "type": "collapsible_tab", // Verify this block type
           "settings": {
             "heading": "Materials",
-            "icon": "leather",
+            "icon": "leather", // Verify this icon
             "content": "",
             "page": ""
           }
@@ -106,7 +106,7 @@
         "media_size": "large",
         "constrain_to_viewport": true,
         "mobile_thumbnails": "hide",
-        "hide_variants": true,
+        // "hide_variants": true,  // Verify if this setting is supported
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
