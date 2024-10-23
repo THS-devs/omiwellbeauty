@@ -259,6 +259,13 @@
       }
 
       .header__search {
+        display: flex;
+        align-items: center;
+        height: 21px;
+
+        details {
+          height: 100%;
+        }
         .header__icon--search {
           list-style: none;
       
