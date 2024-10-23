@@ -8,4 +8,16 @@
       border: 1px solid var(--primary-color);
     }
   }
+
+  .rebuy-cart__flyout-subtotal-amount {
+    font-family: var(--font-body-family);
+  }
+
+  .rebuy-button {
+    box-shadow: none;
+    border: 1px solid va(--primary-color);
+    font-family: var(--font-body-family);
+    font-weight: 500;
+    
+  }
 }
