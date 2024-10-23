@@ -248,13 +248,13 @@
         .cart-count-bubble {
           position: absolute;
           top: calc(50% + 1px);
-          left: 50%;
+          left: calc(50% + 1px);
           transform: translate(-50%, -50%);
           font-size: 12px;
         }
 
         img {
-          max-width: 16px;
+          max-width: 18px;
         }
       }
 
