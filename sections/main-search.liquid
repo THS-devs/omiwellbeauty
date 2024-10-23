@@ -128,7 +128,7 @@
                   <li class="grid__item">
                     {%- case item.object_type -%}
                       {%- when 'product' -%}
-                        {%- capture product_settings -%}title,price{%- endcapture -%}
+              
                         {% render 'card-product',
                           card_product: item,
                           media_aspect_ratio: section.settings.image_ratio,
