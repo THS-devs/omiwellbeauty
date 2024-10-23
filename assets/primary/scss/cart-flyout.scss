@@ -1,3 +1,11 @@
 .rebuy-cart__flyout {
   background-color: #fff;
+
+  .rebuy-cart__flyout-empty-cart {
+    p > a:not(.btn) {
+      background-color: transparent;
+      color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+    }
+  }
 }
