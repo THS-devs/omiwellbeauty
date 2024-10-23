@@ -14,10 +14,10 @@
   }
 
   .rebuy-button {
-    box-shadow: none;
-    border: 1px solid var(--primary-color);
-    font-family: var(--font-body-family);
-    font-weight: 500;
+    box-shadow: none !important;
+    border: 1px solid var(--primary-color) !important;
+    font-family: var(--font-body-family) !important;
+    font-weight: 500 !important;
 
   }
 }
