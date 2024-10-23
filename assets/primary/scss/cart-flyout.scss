@@ -16,6 +16,10 @@
   #rebuy-discount-input {
     border-color: var(--primary-color);
     border-width: 1px;
+
+    &::placeholder {
+      color: var(--primary-color);
+    }
   }
 
   .rebuy-button {
