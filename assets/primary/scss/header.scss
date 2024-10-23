@@ -243,6 +243,14 @@
       
       .header__icon--cart {
         margin-bottom: 0;
+        position: relative;
+
+        .cart-count-bubble {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
 
         img {
           max-width: 16px;
