@@ -1,5 +1,5 @@
 .rebuy-cart__flyout {
-  background-color: #fff;
+  background-color: var(--background);
 
   .rebuy-cart__flyout-empty-cart {
     p > a:not(.btn) {
@@ -23,10 +23,13 @@
   }
 
   .rebuy-button {
-    box-shadow: none !important;
+    box-shadow: none;
     border: 1px solid var(--primary-color) !important;
     font-family: var(--font-body-family) !important;
     font-weight: 500 !important;
+    box-shadow: #000 0 8px 20px -10px;
+    background-color: var(--primary-color);
+    color: #fff;
 
     span {
       font-size: 16px;
