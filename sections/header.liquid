@@ -1,4 +1,4 @@
-<div class="header-main">
+<div class="header-main {% if section.settings.make-sticky == true %} make-sticky {% endif %}">
   <header class="header page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
     <div class="container-fluid lg">
       <div class="mobile-toggle-wpr">
