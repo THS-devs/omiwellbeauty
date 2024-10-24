@@ -27,9 +27,9 @@
     border: 1px solid var(--primary-color) !important;
     font-family: var(--font-body-family) !important;
     font-weight: 500 !important;
-    box-shadow: #000 0 8px 20px -10px;
-    background-color: var(--primary-color);
-    color: #fff;
+    box-shadow: #000 0 8px 20px -10px !important;
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
 
     span {
       font-size: 16px;
