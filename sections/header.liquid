@@ -253,7 +253,7 @@
 {% schema %}
 {
   "name": "t:sections.header.name",
-  "class": "section-header",
+  "class": "section-header {% if section.settings.make-sticky == true %} sticky-header {% endif %}",
   "settings": [
     {
       "type": "checkbox",
