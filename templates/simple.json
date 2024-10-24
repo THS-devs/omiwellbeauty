@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-about"
+      "type": "main-simple"
     }
   },
   "order": [
